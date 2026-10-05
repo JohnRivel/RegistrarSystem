@@ -1,6 +1,0 @@
-sections should be example
-
-course(year)(semester)(M=morning, A=Afternoon, E=Evening)(section)
-
-example:
-BSIT31E3
