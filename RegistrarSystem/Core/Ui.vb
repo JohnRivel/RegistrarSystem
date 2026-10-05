@@ -7,19 +7,53 @@ Imports MySql.Data.MySqlClient
 
 Public Module Ui
 
-    Public ReadOnly ColBg As Color = Color.FromArgb(41, 44, 58)
-    Public ReadOnly ColInput As Color = Color.FromArgb(66, 70, 91)
-    Public ReadOnly ColReadOnly As Color = Color.FromArgb(46, 49, 64)
-    Public ReadOnly ColCard As Color = Color.FromArgb(51, 55, 72)
-    Public ReadOnly ColBar As Color = Color.FromArgb(31, 33, 45)
-    Public ReadOnly ColText As Color = Color.FromArgb(236, 238, 244)
-    Public ReadOnly ColMuted As Color = Color.FromArgb(158, 164, 184)
-    Public ReadOnly ColAccent As Color = Color.FromArgb(74, 125, 255)
-    Public ReadOnly ColGreen As Color = Color.FromArgb(38, 170, 118)
-    Public ReadOnly ColRed As Color = Color.FromArgb(228, 84, 108)
-    Public ReadOnly ColOrange As Color = Color.FromArgb(230, 126, 34)
-    Public ReadOnly ColYellow As Color = Color.FromArgb(232, 172, 48)
-    Public ReadOnly ColTeal As Color = Color.FromArgb(22, 170, 168)
+    Public Const SchoolName As String = "Lyceum of Alabang"
+    Public Const SchoolAddress As String = "Km. 30 National Road, Tunasan, Muntinlupa City"
+
+    Public ReadOnly ColBg As Color = Color.FromArgb(37, 47, 75)
+    Public ReadOnly ColInput As Color = Color.FromArgb(58, 72, 108)
+    Public ReadOnly ColReadOnly As Color = Color.FromArgb(42, 53, 83)
+    Public ReadOnly ColCard As Color = Color.FromArgb(46, 58, 90)
+    Public ReadOnly ColBar As Color = Color.FromArgb(30, 39, 64)
+    Public ReadOnly ColText As Color = Color.FromArgb(220, 225, 236)
+    Public ReadOnly ColMuted As Color = Color.FromArgb(156, 168, 196)
+    Public ReadOnly ColAccent As Color = Color.FromArgb(62, 104, 186)
+    Public ReadOnly ColGold As Color = Color.FromArgb(226, 186, 92)
+    Public ReadOnly ColGreen As Color = Color.FromArgb(62, 150, 116)
+    Public ReadOnly ColRed As Color = Color.FromArgb(196, 96, 112)
+    Public ReadOnly ColOrange As Color = Color.FromArgb(204, 132, 72)
+    Public ReadOnly ColYellow As Color = Color.FromArgb(206, 166, 82)
+    Public ReadOnly ColTeal As Color = Color.FromArgb(58, 150, 150)
+
+    Private logoIcon As Icon
+
+    Public ReadOnly Property SchoolIcon As Icon
+        Get
+            If logoIcon Is Nothing Then
+                Using small As New Bitmap(My.Resources.school_logo, 64, 64)
+                    logoIcon = Icon.FromHandle(small.GetHicon())
+                End Using
+            End If
+            Return logoIcon
+        End Get
+    End Property
+
+    ' The school building photo, cropped to fill and dimmed so text stays readable on top of it.
+    Public Function SchoolBackdrop(size As Size) As Bitmap
+        Dim photo = My.Resources.school_building
+        Dim result As New Bitmap(size.Width, size.Height)
+        Using g = Graphics.FromImage(result)
+            g.InterpolationMode = Drawing2D.InterpolationMode.HighQualityBicubic
+            Dim scale = Math.Max(size.Width / photo.Width, size.Height / photo.Height)
+            Dim w = CInt(Math.Ceiling(photo.Width * scale))
+            Dim h = CInt(Math.Ceiling(photo.Height * scale))
+            g.DrawImage(photo, (size.Width - w) \ 2, (size.Height - h) \ 2, w, h)
+            Using shade As New SolidBrush(Color.FromArgb(205, ColBar))
+                g.FillRectangle(shade, 0, 0, size.Width, size.Height)
+            End Using
+        End Using
+        Return result
+    End Function
 
     Public Function Blend(a As Color, b As Color, amount As Double) As Color
         Return Color.FromArgb(
@@ -31,7 +65,7 @@ Public Module Ui
     Public Function StatusColor(status As String) As Color
         Select Case status
             Case RequestService.StPending : Return ColYellow
-            Case RequestService.StProcessing : Return ColAccent
+            Case RequestService.StProcessing : Return Color.FromArgb(110, 150, 220)
             Case RequestService.StReady : Return ColTeal
             Case RequestService.StReleased, RequestService.PayPaid, "Active" : Return ColGreen
             Case RequestService.StCancelled, "Inactive" : Return ColRed
@@ -105,7 +139,7 @@ Public Module Ui
         Return Peso & value.ToString("#,##0.00")
     End Function
 
-    Public Sub Info(message As String, Optional title As String = "Registrar System")
+    Public Sub Info(message As String, Optional title As String = SchoolName & " Registrar")
         MessageBox.Show(message, title, MessageBoxButtons.OK, MessageBoxIcon.Information)
     End Sub
 

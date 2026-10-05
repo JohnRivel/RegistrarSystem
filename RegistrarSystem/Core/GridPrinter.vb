@@ -55,8 +55,11 @@ Public Class GridPrinter
                   .LineAlignment = StringAlignment.Center}
 
             Dim y As Single = m.Top
-            g.DrawString("OFFICE OF THE REGISTRAR", fSmall, Brushes.DimGray, m.Left, y)
-            y += 18
+            g.DrawImage(My.Resources.school_logo, m.Right - 64, m.Top, 64, 64)
+            g.DrawString(SchoolName.ToUpperInvariant(), fHead, Brushes.Navy, m.Left, y)
+            y += 16
+            g.DrawString("Office of the Registrar  |  " & SchoolAddress, fSmall, Brushes.DimGray, m.Left, y)
+            y += 20
             g.DrawString(title, fTitle, Brushes.Black, m.Left, y)
             y += 30
             g.DrawString(subtitle, fSmall, Brushes.DimGray, m.Left, y)

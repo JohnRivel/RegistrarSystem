@@ -17,297 +17,359 @@ Partial Class MainForm
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
-        Me.pnlTop = New System.Windows.Forms.Panel()
-        Me.lblClock = New System.Windows.Forms.Label()
-        Me.lblUserIcon = New System.Windows.Forms.Label()
-        Me.lblUser = New System.Windows.Forms.Label()
-        Me.lblBrand = New System.Windows.Forms.Label()
-        Me.lblBrandIcon = New System.Windows.Forms.Label()
-        Me.btnMenu = New System.Windows.Forms.Button()
-        Me.pnlSide = New System.Windows.Forms.Panel()
-        Me.btnUsers = New System.Windows.Forms.Button()
-        Me.btnReports = New System.Windows.Forms.Button()
-        Me.btnRequests = New System.Windows.Forms.Button()
-        Me.btnNewRequest = New System.Windows.Forms.Button()
-        Me.btnDocuments = New System.Windows.Forms.Button()
-        Me.btnStudents = New System.Windows.Forms.Button()
-        Me.btnDashboard = New System.Windows.Forms.Button()
-        Me.lblMenuTitle = New System.Windows.Forms.Label()
-        Me.btnLogout = New System.Windows.Forms.Button()
-        Me.pnlContent = New System.Windows.Forms.Panel()
-        Me.clockTimer = New System.Windows.Forms.Timer(Me.components)
-        Me.toolTip = New System.Windows.Forms.ToolTip(Me.components)
-        Me.pnlTop.SuspendLayout()
-        Me.pnlSide.SuspendLayout()
-        Me.SuspendLayout()
-        Me.pnlTop.BackColor = System.Drawing.Color.FromArgb(31, 33, 45)
-        Me.pnlTop.Controls.Add(Me.lblClock)
-        Me.pnlTop.Controls.Add(Me.lblUserIcon)
-        Me.pnlTop.Controls.Add(Me.lblUser)
-        Me.pnlTop.Controls.Add(Me.lblBrand)
-        Me.pnlTop.Controls.Add(Me.lblBrandIcon)
-        Me.pnlTop.Controls.Add(Me.btnMenu)
-        Me.pnlTop.Dock = System.Windows.Forms.DockStyle.Top
-        Me.pnlTop.Location = New System.Drawing.Point(0, 0)
-        Me.pnlTop.Name = "pnlTop"
-        Me.pnlTop.Size = New System.Drawing.Size(1304, 56)
-        Me.pnlTop.TabIndex = 2
-        Me.lblClock.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lblClock.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblClock.Location = New System.Drawing.Point(534, 0)
-        Me.lblClock.Name = "lblClock"
-        Me.lblClock.Size = New System.Drawing.Size(420, 56)
-        Me.lblClock.TabIndex = 0
-        Me.lblClock.Text = "Current Time and Date:"
-        Me.lblClock.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.lblUserIcon.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lblUserIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 14.0!)
-        Me.lblUserIcon.ForeColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.lblUserIcon.Location = New System.Drawing.Point(954, 0)
-        Me.lblUserIcon.Name = "lblUserIcon"
-        Me.lblUserIcon.Size = New System.Drawing.Size(50, 56)
-        Me.lblUserIcon.TabIndex = 1
-        Me.lblUserIcon.Text = ""
-        Me.lblUserIcon.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.lblUser.Dock = System.Windows.Forms.DockStyle.Right
-        Me.lblUser.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.lblUser.Location = New System.Drawing.Point(1004, 0)
-        Me.lblUser.Name = "lblUser"
-        Me.lblUser.Size = New System.Drawing.Size(300, 56)
-        Me.lblUser.TabIndex = 2
-        Me.lblUser.Text = "User Name  (Role)"
-        Me.lblUser.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblBrand.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblBrand.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!)
-        Me.lblBrand.Location = New System.Drawing.Point(100, 0)
-        Me.lblBrand.Name = "lblBrand"
-        Me.lblBrand.Size = New System.Drawing.Size(300, 56)
-        Me.lblBrand.TabIndex = 3
-        Me.lblBrand.Text = "REGISTRAR  DOCUMENT  REQUEST"
-        Me.lblBrand.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.lblBrandIcon.Dock = System.Windows.Forms.DockStyle.Left
-        Me.lblBrandIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 15.0!)
-        Me.lblBrandIcon.Location = New System.Drawing.Point(56, 0)
-        Me.lblBrandIcon.Name = "lblBrandIcon"
-        Me.lblBrandIcon.Size = New System.Drawing.Size(44, 56)
-        Me.lblBrandIcon.TabIndex = 4
-        Me.lblBrandIcon.Text = ""
-        Me.lblBrandIcon.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btnMenu.BackColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMenu.Dock = System.Windows.Forms.DockStyle.Left
-        Me.btnMenu.FlatAppearance.BorderSize = 0
-        Me.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnMenu.Font = New System.Drawing.Font("Segoe MDL2 Assets", 14.0!)
-        Me.btnMenu.ForeColor = System.Drawing.Color.White
-        Me.btnMenu.Location = New System.Drawing.Point(0, 0)
-        Me.btnMenu.Name = "btnMenu"
-        Me.btnMenu.Size = New System.Drawing.Size(56, 56)
-        Me.btnMenu.TabIndex = 5
-        Me.btnMenu.TabStop = False
-        Me.btnMenu.Text = ""
-        Me.toolTip.SetToolTip(Me.btnMenu, "Show / hide menu")
-        Me.btnMenu.UseVisualStyleBackColor = False
-        Me.pnlSide.BackColor = System.Drawing.Color.FromArgb(31, 33, 45)
-        Me.pnlSide.Controls.Add(Me.btnUsers)
-        Me.pnlSide.Controls.Add(Me.btnReports)
-        Me.pnlSide.Controls.Add(Me.btnRequests)
-        Me.pnlSide.Controls.Add(Me.btnNewRequest)
-        Me.pnlSide.Controls.Add(Me.btnDocuments)
-        Me.pnlSide.Controls.Add(Me.btnStudents)
-        Me.pnlSide.Controls.Add(Me.btnDashboard)
-        Me.pnlSide.Controls.Add(Me.lblMenuTitle)
-        Me.pnlSide.Controls.Add(Me.btnLogout)
-        Me.pnlSide.Dock = System.Windows.Forms.DockStyle.Left
-        Me.pnlSide.Location = New System.Drawing.Point(0, 56)
-        Me.pnlSide.Name = "pnlSide"
-        Me.pnlSide.Size = New System.Drawing.Size(236, 725)
-        Me.pnlSide.TabIndex = 1
-        Me.btnUsers.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnUsers.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnUsers.FlatAppearance.BorderSize = 0
-        Me.btnUsers.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnUsers.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnUsers.Image = Global.RegistrarSystem.My.Resources.Resources.nav_users
-        Me.btnUsers.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUsers.Location = New System.Drawing.Point(0, 344)
-        Me.btnUsers.Name = "btnUsers"
-        Me.btnUsers.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnUsers.Size = New System.Drawing.Size(236, 50)
-        Me.btnUsers.TabIndex = 7
-        Me.btnUsers.TabStop = False
-        Me.btnUsers.Tag = "users"
-        Me.btnUsers.Text = "   User Management"
-        Me.btnUsers.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnUsers.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnUsers, "User Management")
-        Me.btnReports.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnReports.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnReports.FlatAppearance.BorderSize = 0
-        Me.btnReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnReports.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnReports.Image = Global.RegistrarSystem.My.Resources.Resources.nav_reports
-        Me.btnReports.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReports.Location = New System.Drawing.Point(0, 294)
-        Me.btnReports.Name = "btnReports"
-        Me.btnReports.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnReports.Size = New System.Drawing.Size(236, 50)
-        Me.btnReports.TabIndex = 6
-        Me.btnReports.TabStop = False
-        Me.btnReports.Tag = "reports"
-        Me.btnReports.Text = "   Reports"
-        Me.btnReports.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnReports.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnReports, "Reports")
-        Me.btnRequests.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnRequests.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnRequests.FlatAppearance.BorderSize = 0
-        Me.btnRequests.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnRequests.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnRequests.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnRequests.Image = Global.RegistrarSystem.My.Resources.Resources.nav_requests
-        Me.btnRequests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRequests.Location = New System.Drawing.Point(0, 244)
-        Me.btnRequests.Name = "btnRequests"
-        Me.btnRequests.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnRequests.Size = New System.Drawing.Size(236, 50)
-        Me.btnRequests.TabIndex = 5
-        Me.btnRequests.TabStop = False
-        Me.btnRequests.Tag = "requests"
-        Me.btnRequests.Text = "   Document Requests"
-        Me.btnRequests.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnRequests.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnRequests, "Document Requests")
-        Me.btnNewRequest.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnNewRequest.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnNewRequest.FlatAppearance.BorderSize = 0
-        Me.btnNewRequest.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnNewRequest.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnNewRequest.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnNewRequest.Image = Global.RegistrarSystem.My.Resources.Resources.nav_newrequest
-        Me.btnNewRequest.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNewRequest.Location = New System.Drawing.Point(0, 194)
-        Me.btnNewRequest.Name = "btnNewRequest"
-        Me.btnNewRequest.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnNewRequest.Size = New System.Drawing.Size(236, 50)
-        Me.btnNewRequest.TabIndex = 4
-        Me.btnNewRequest.TabStop = False
-        Me.btnNewRequest.Tag = "newrequest"
-        Me.btnNewRequest.Text = "   New Request"
-        Me.btnNewRequest.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnNewRequest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnNewRequest, "New Request")
-        Me.btnDocuments.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDocuments.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDocuments.FlatAppearance.BorderSize = 0
-        Me.btnDocuments.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnDocuments.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDocuments.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnDocuments.Image = Global.RegistrarSystem.My.Resources.Resources.nav_documents
-        Me.btnDocuments.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDocuments.Location = New System.Drawing.Point(0, 144)
-        Me.btnDocuments.Name = "btnDocuments"
-        Me.btnDocuments.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnDocuments.Size = New System.Drawing.Size(236, 50)
-        Me.btnDocuments.TabIndex = 3
-        Me.btnDocuments.TabStop = False
-        Me.btnDocuments.Tag = "documents"
-        Me.btnDocuments.Text = "   Document Management"
-        Me.btnDocuments.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDocuments.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnDocuments, "Document Management")
-        Me.btnStudents.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnStudents.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnStudents.FlatAppearance.BorderSize = 0
-        Me.btnStudents.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnStudents.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStudents.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnStudents.Image = Global.RegistrarSystem.My.Resources.Resources.nav_students
-        Me.btnStudents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnStudents.Location = New System.Drawing.Point(0, 94)
-        Me.btnStudents.Name = "btnStudents"
-        Me.btnStudents.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnStudents.Size = New System.Drawing.Size(236, 50)
-        Me.btnStudents.TabIndex = 2
-        Me.btnStudents.TabStop = False
-        Me.btnStudents.Tag = "students"
-        Me.btnStudents.Text = "   Student Management"
-        Me.btnStudents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnStudents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnStudents, "Student Management")
-        Me.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top
-        Me.btnDashboard.FlatAppearance.BorderSize = 0
-        Me.btnDashboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnDashboard.Image = Global.RegistrarSystem.My.Resources.Resources.nav_home
-        Me.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.Location = New System.Drawing.Point(0, 44)
-        Me.btnDashboard.Name = "btnDashboard"
-        Me.btnDashboard.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnDashboard.Size = New System.Drawing.Size(236, 50)
-        Me.btnDashboard.TabIndex = 1
-        Me.btnDashboard.TabStop = False
-        Me.btnDashboard.Tag = "home"
-        Me.btnDashboard.Text = "   Dashboard"
-        Me.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnDashboard, "Dashboard")
-        Me.lblMenuTitle.Dock = System.Windows.Forms.DockStyle.Top
-        Me.lblMenuTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 8.5!)
-        Me.lblMenuTitle.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblMenuTitle.Location = New System.Drawing.Point(0, 0)
-        Me.lblMenuTitle.Name = "lblMenuTitle"
-        Me.lblMenuTitle.Padding = New System.Windows.Forms.Padding(20, 0, 0, 8)
-        Me.lblMenuTitle.Size = New System.Drawing.Size(236, 44)
-        Me.lblMenuTitle.TabIndex = 0
-        Me.lblMenuTitle.Text = "MAIN MENU"
-        Me.lblMenuTitle.TextAlign = System.Drawing.ContentAlignment.BottomLeft
-        Me.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnLogout.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnLogout.FlatAppearance.BorderSize = 0
-        Me.btnLogout.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnLogout.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.btnLogout.Image = Global.RegistrarSystem.My.Resources.Resources.nav_logout
-        Me.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLogout.Location = New System.Drawing.Point(0, 675)
-        Me.btnLogout.Name = "btnLogout"
-        Me.btnLogout.Padding = New System.Windows.Forms.Padding(16, 0, 0, 0)
-        Me.btnLogout.Size = New System.Drawing.Size(236, 50)
-        Me.btnLogout.TabIndex = 8
-        Me.btnLogout.TabStop = False
-        Me.btnLogout.Text = "   Logout"
-        Me.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.toolTip.SetToolTip(Me.btnLogout, "Logout")
-        Me.pnlContent.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.pnlContent.Location = New System.Drawing.Point(236, 56)
-        Me.pnlContent.Name = "pnlContent"
-        Me.pnlContent.Size = New System.Drawing.Size(1068, 725)
-        Me.pnlContent.TabIndex = 0
-        Me.clockTimer.Interval = 1000
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.FromArgb(41, 44, 58)
-        Me.ClientSize = New System.Drawing.Size(1304, 781)
-        Me.Controls.Add(Me.pnlContent)
-        Me.Controls.Add(Me.pnlSide)
-        Me.Controls.Add(Me.pnlTop)
-        Me.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.MinimumSize = New System.Drawing.Size(1300, 720)
-        Me.Name = "MainForm"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Registrar Document Request System"
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
-        Me.pnlTop.ResumeLayout(False)
-        Me.pnlSide.ResumeLayout(False)
-        Me.ResumeLayout(False)
+        components = New ComponentModel.Container()
+        pnlTop = New Panel()
+        lblClock = New Label()
+        lblUserIcon = New Label()
+        lblUser = New Label()
+        lblBrand = New Label()
+        lblBrandIcon = New Label()
+        btnMenu = New Button()
+        pnlSide = New Panel()
+        btnUsers = New Button()
+        btnReports = New Button()
+        btnRequests = New Button()
+        btnNewRequest = New Button()
+        btnDocuments = New Button()
+        btnStudents = New Button()
+        btnDashboard = New Button()
+        lblMenuTitle = New Label()
+        btnLogout = New Button()
+        pnlContent = New Panel()
+        clockTimer = New Timer(components)
+        toolTip = New ToolTip(components)
+        pnlTop.SuspendLayout()
+        pnlSide.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' pnlTop
+        ' 
+        pnlTop.BackColor = Color.FromArgb(CByte(30), CByte(39), CByte(64))
+        pnlTop.Controls.Add(lblClock)
+        pnlTop.Controls.Add(lblUserIcon)
+        pnlTop.Controls.Add(lblUser)
+        pnlTop.Controls.Add(lblBrand)
+        pnlTop.Controls.Add(lblBrandIcon)
+        pnlTop.Controls.Add(btnMenu)
+        pnlTop.Dock = DockStyle.Top
+        pnlTop.Location = New Point(0, 0)
+        pnlTop.Name = "pnlTop"
+        pnlTop.Size = New Size(1304, 56)
+        pnlTop.TabIndex = 2
+        ' 
+        ' lblClock
+        ' 
+        lblClock.Dock = DockStyle.Right
+        lblClock.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblClock.Location = New Point(534, 0)
+        lblClock.Name = "lblClock"
+        lblClock.Size = New Size(420, 56)
+        lblClock.TabIndex = 0
+        lblClock.Text = "Current Time and Date:"
+        lblClock.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' lblUserIcon
+        ' 
+        lblUserIcon.Dock = DockStyle.Right
+        lblUserIcon.Font = New Font("Segoe MDL2 Assets", 14F)
+        lblUserIcon.ForeColor = Color.FromArgb(CByte(226), CByte(186), CByte(92))
+        lblUserIcon.Location = New Point(954, 0)
+        lblUserIcon.Name = "lblUserIcon"
+        lblUserIcon.Size = New Size(50, 56)
+        lblUserIcon.TabIndex = 1
+        lblUserIcon.Text = ""
+        lblUserIcon.TextAlign = ContentAlignment.MiddleCenter
+        ' 
+        ' lblUser
+        ' 
+        lblUser.Dock = DockStyle.Right
+        lblUser.Font = New Font("Segoe UI Semibold", 9.5F)
+        lblUser.Location = New Point(1004, 0)
+        lblUser.Name = "lblUser"
+        lblUser.Size = New Size(300, 56)
+        lblUser.TabIndex = 2
+        lblUser.Text = "User Name  (Role)"
+        lblUser.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' lblBrand
+        ' 
+        lblBrand.Dock = DockStyle.Left
+        lblBrand.Font = New Font("Segoe UI Semibold", 11F)
+        lblBrand.Location = New Point(108, 0)
+        lblBrand.Name = "lblBrand"
+        lblBrand.Size = New Size(340, 56)
+        lblBrand.TabIndex = 3
+        lblBrand.Text = "LYCEUM OF ALABANG  |  REGISTRAR"
+        lblBrand.TextAlign = ContentAlignment.MiddleLeft
+        ' 
+        ' lblBrandIcon
+        ' 
+        lblBrandIcon.Dock = DockStyle.Left
+        lblBrandIcon.Font = New Font("Segoe MDL2 Assets", 15F)
+        lblBrandIcon.ForeColor = Color.FromArgb(CByte(226), CByte(186), CByte(92))
+        lblBrandIcon.Location = New Point(56, 0)
+        lblBrandIcon.Name = "lblBrandIcon"
+        lblBrandIcon.Size = New Size(52, 56)
+        lblBrandIcon.TabIndex = 4
+        lblBrandIcon.Text = ""
+        lblBrandIcon.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' btnMenu
+        ' 
+        btnMenu.BackColor = Color.FromArgb(CByte(62), CByte(104), CByte(186))
+        btnMenu.Cursor = Cursors.Hand
+        btnMenu.Dock = DockStyle.Left
+        btnMenu.FlatAppearance.BorderSize = 0
+        btnMenu.FlatStyle = FlatStyle.Flat
+        btnMenu.Font = New Font("Segoe MDL2 Assets", 14F)
+        btnMenu.ForeColor = Color.White
+        btnMenu.Location = New Point(0, 0)
+        btnMenu.Name = "btnMenu"
+        btnMenu.Size = New Size(56, 56)
+        btnMenu.TabIndex = 5
+        btnMenu.TabStop = False
+        btnMenu.Text = ""
+        toolTip.SetToolTip(btnMenu, "Show / hide menu")
+        btnMenu.UseVisualStyleBackColor = False
+        ' 
+        ' pnlSide
+        ' 
+        pnlSide.BackColor = Color.FromArgb(CByte(30), CByte(39), CByte(64))
+        pnlSide.Controls.Add(btnUsers)
+        pnlSide.Controls.Add(btnReports)
+        pnlSide.Controls.Add(btnRequests)
+        pnlSide.Controls.Add(btnNewRequest)
+        pnlSide.Controls.Add(btnDocuments)
+        pnlSide.Controls.Add(btnStudents)
+        pnlSide.Controls.Add(btnDashboard)
+        pnlSide.Controls.Add(lblMenuTitle)
+        pnlSide.Controls.Add(btnLogout)
+        pnlSide.Dock = DockStyle.Left
+        pnlSide.Location = New Point(0, 56)
+        pnlSide.Name = "pnlSide"
+        pnlSide.Size = New Size(236, 725)
+        pnlSide.TabIndex = 1
+        ' 
+        ' btnUsers
+        ' 
+        btnUsers.Cursor = Cursors.Hand
+        btnUsers.Dock = DockStyle.Top
+        btnUsers.FlatAppearance.BorderSize = 0
+        btnUsers.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnUsers.FlatStyle = FlatStyle.Flat
+        btnUsers.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnUsers.Image = My.Resources.Resources.nav_users
+        btnUsers.ImageAlign = ContentAlignment.MiddleLeft
+        btnUsers.Location = New Point(0, 344)
+        btnUsers.Name = "btnUsers"
+        btnUsers.Padding = New Padding(16, 0, 0, 0)
+        btnUsers.Size = New Size(236, 50)
+        btnUsers.TabIndex = 7
+        btnUsers.TabStop = False
+        btnUsers.Tag = "users"
+        btnUsers.Text = "   User Management"
+        btnUsers.TextAlign = ContentAlignment.MiddleLeft
+        btnUsers.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnUsers, "User Management")
+        ' 
+        ' btnReports
+        ' 
+        btnReports.Cursor = Cursors.Hand
+        btnReports.Dock = DockStyle.Top
+        btnReports.FlatAppearance.BorderSize = 0
+        btnReports.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnReports.FlatStyle = FlatStyle.Flat
+        btnReports.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnReports.Image = My.Resources.Resources.nav_reports
+        btnReports.ImageAlign = ContentAlignment.MiddleLeft
+        btnReports.Location = New Point(0, 294)
+        btnReports.Name = "btnReports"
+        btnReports.Padding = New Padding(16, 0, 0, 0)
+        btnReports.Size = New Size(236, 50)
+        btnReports.TabIndex = 6
+        btnReports.TabStop = False
+        btnReports.Tag = "reports"
+        btnReports.Text = "   Reports"
+        btnReports.TextAlign = ContentAlignment.MiddleLeft
+        btnReports.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnReports, "Reports")
+        ' 
+        ' btnRequests
+        ' 
+        btnRequests.Cursor = Cursors.Hand
+        btnRequests.Dock = DockStyle.Top
+        btnRequests.FlatAppearance.BorderSize = 0
+        btnRequests.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnRequests.FlatStyle = FlatStyle.Flat
+        btnRequests.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnRequests.Image = My.Resources.Resources.nav_requests
+        btnRequests.ImageAlign = ContentAlignment.MiddleLeft
+        btnRequests.Location = New Point(0, 244)
+        btnRequests.Name = "btnRequests"
+        btnRequests.Padding = New Padding(16, 0, 0, 0)
+        btnRequests.Size = New Size(236, 50)
+        btnRequests.TabIndex = 5
+        btnRequests.TabStop = False
+        btnRequests.Tag = "requests"
+        btnRequests.Text = "   Document Requests"
+        btnRequests.TextAlign = ContentAlignment.MiddleLeft
+        btnRequests.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnRequests, "Document Requests")
+        ' 
+        ' btnNewRequest
+        ' 
+        btnNewRequest.Cursor = Cursors.Hand
+        btnNewRequest.Dock = DockStyle.Top
+        btnNewRequest.FlatAppearance.BorderSize = 0
+        btnNewRequest.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnNewRequest.FlatStyle = FlatStyle.Flat
+        btnNewRequest.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnNewRequest.Image = My.Resources.Resources.nav_newrequest
+        btnNewRequest.ImageAlign = ContentAlignment.MiddleLeft
+        btnNewRequest.Location = New Point(0, 194)
+        btnNewRequest.Name = "btnNewRequest"
+        btnNewRequest.Padding = New Padding(16, 0, 0, 0)
+        btnNewRequest.Size = New Size(236, 50)
+        btnNewRequest.TabIndex = 4
+        btnNewRequest.TabStop = False
+        btnNewRequest.Tag = "newrequest"
+        btnNewRequest.Text = "   New Request"
+        btnNewRequest.TextAlign = ContentAlignment.MiddleLeft
+        btnNewRequest.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnNewRequest, "New Request")
+        ' 
+        ' btnDocuments
+        ' 
+        btnDocuments.Cursor = Cursors.Hand
+        btnDocuments.Dock = DockStyle.Top
+        btnDocuments.FlatAppearance.BorderSize = 0
+        btnDocuments.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnDocuments.FlatStyle = FlatStyle.Flat
+        btnDocuments.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnDocuments.Image = My.Resources.Resources.nav_documents
+        btnDocuments.ImageAlign = ContentAlignment.MiddleLeft
+        btnDocuments.Location = New Point(0, 144)
+        btnDocuments.Name = "btnDocuments"
+        btnDocuments.Padding = New Padding(16, 0, 0, 0)
+        btnDocuments.Size = New Size(236, 50)
+        btnDocuments.TabIndex = 3
+        btnDocuments.TabStop = False
+        btnDocuments.Tag = "documents"
+        btnDocuments.Text = "   Document Management"
+        btnDocuments.TextAlign = ContentAlignment.MiddleLeft
+        btnDocuments.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnDocuments, "Document Management")
+        ' 
+        ' btnStudents
+        ' 
+        btnStudents.Cursor = Cursors.Hand
+        btnStudents.Dock = DockStyle.Top
+        btnStudents.FlatAppearance.BorderSize = 0
+        btnStudents.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnStudents.FlatStyle = FlatStyle.Flat
+        btnStudents.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnStudents.Image = My.Resources.Resources.nav_students
+        btnStudents.ImageAlign = ContentAlignment.MiddleLeft
+        btnStudents.Location = New Point(0, 94)
+        btnStudents.Name = "btnStudents"
+        btnStudents.Padding = New Padding(16, 0, 0, 0)
+        btnStudents.Size = New Size(236, 50)
+        btnStudents.TabIndex = 2
+        btnStudents.TabStop = False
+        btnStudents.Tag = "students"
+        btnStudents.Text = "   Student Management"
+        btnStudents.TextAlign = ContentAlignment.MiddleLeft
+        btnStudents.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnStudents, "Student Management")
+        ' 
+        ' btnDashboard
+        ' 
+        btnDashboard.Cursor = Cursors.Hand
+        btnDashboard.Dock = DockStyle.Top
+        btnDashboard.FlatAppearance.BorderSize = 0
+        btnDashboard.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnDashboard.FlatStyle = FlatStyle.Flat
+        btnDashboard.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnDashboard.Image = My.Resources.Resources.nav_home
+        btnDashboard.ImageAlign = ContentAlignment.MiddleLeft
+        btnDashboard.Location = New Point(0, 44)
+        btnDashboard.Name = "btnDashboard"
+        btnDashboard.Padding = New Padding(16, 0, 0, 0)
+        btnDashboard.Size = New Size(236, 50)
+        btnDashboard.TabIndex = 1
+        btnDashboard.TabStop = False
+        btnDashboard.Tag = "home"
+        btnDashboard.Text = "   Dashboard"
+        btnDashboard.TextAlign = ContentAlignment.MiddleLeft
+        btnDashboard.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnDashboard, "Dashboard")
+        ' 
+        ' lblMenuTitle
+        ' 
+        lblMenuTitle.Dock = DockStyle.Top
+        lblMenuTitle.Font = New Font("Segoe UI Semibold", 8.5F)
+        lblMenuTitle.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblMenuTitle.Location = New Point(0, 0)
+        lblMenuTitle.Name = "lblMenuTitle"
+        lblMenuTitle.Padding = New Padding(20, 0, 0, 8)
+        lblMenuTitle.Size = New Size(236, 44)
+        lblMenuTitle.TabIndex = 0
+        lblMenuTitle.Text = "MAIN MENU"
+        lblMenuTitle.TextAlign = ContentAlignment.BottomLeft
+        ' 
+        ' btnLogout
+        ' 
+        btnLogout.Cursor = Cursors.Hand
+        btnLogout.Dock = DockStyle.Bottom
+        btnLogout.FlatAppearance.BorderSize = 0
+        btnLogout.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        btnLogout.FlatStyle = FlatStyle.Flat
+        btnLogout.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        btnLogout.Image = My.Resources.Resources.nav_logout
+        btnLogout.ImageAlign = ContentAlignment.MiddleLeft
+        btnLogout.Location = New Point(0, 675)
+        btnLogout.Name = "btnLogout"
+        btnLogout.Padding = New Padding(16, 0, 0, 0)
+        btnLogout.Size = New Size(236, 50)
+        btnLogout.TabIndex = 8
+        btnLogout.TabStop = False
+        btnLogout.Text = "   Logout"
+        btnLogout.TextAlign = ContentAlignment.MiddleLeft
+        btnLogout.TextImageRelation = TextImageRelation.ImageBeforeText
+        toolTip.SetToolTip(btnLogout, "Logout")
+        ' 
+        ' pnlContent
+        ' 
+        pnlContent.Dock = DockStyle.Fill
+        pnlContent.Location = New Point(236, 56)
+        pnlContent.Name = "pnlContent"
+        pnlContent.Size = New Size(1068, 725)
+        pnlContent.TabIndex = 0
+        ' 
+        ' clockTimer
+        ' 
+        clockTimer.Interval = 1000
+        ' 
+        ' MainForm
+        ' 
+        AutoScaleDimensions = New SizeF(96F, 96F)
+        AutoScaleMode = AutoScaleMode.Dpi
+        BackColor = Color.FromArgb(CByte(37), CByte(47), CByte(75))
+        ClientSize = New Size(1304, 781)
+        Controls.Add(pnlContent)
+        Controls.Add(pnlSide)
+        Controls.Add(pnlTop)
+        Font = New Font("Segoe UI", 10F)
+        ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        FormBorderStyle = FormBorderStyle.None
+        MinimumSize = New Size(1300, 720)
+        Name = "MainForm"
+        StartPosition = FormStartPosition.CenterScreen
+        Text = "Lyceum of Alabang - Registrar Document Request System"
+        WindowState = FormWindowState.Maximized
+        pnlTop.ResumeLayout(False)
+        pnlSide.ResumeLayout(False)
+        ResumeLayout(False)
 
     End Sub
 

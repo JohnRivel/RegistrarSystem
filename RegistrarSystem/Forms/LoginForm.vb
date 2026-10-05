@@ -6,12 +6,20 @@ Public Class LoginForm
     Private failedAttempts As Integer
     Private lockRemaining As Integer
 
+    Private Sub LoginForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Icon = SchoolIcon
+        pnlBrand.BackgroundImage = SchoolBackdrop(pnlBrand.Size)
+        For Each c As Control In pnlBrand.Controls
+            c.BackColor = Color.Transparent
+        Next
+    End Sub
+
     Private Sub LoginForm_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
         txtUser.Focus()
     End Sub
 
     Private Sub LoginForm_Paint(sender As Object, e As PaintEventArgs) Handles MyBase.Paint
-        Using p As New Pen(Color.FromArgb(76, 81, 104))
+        Using p As New Pen(Color.FromArgb(68, 82, 118))
             e.Graphics.DrawRectangle(p, 0, 0, ClientSize.Width - 1, ClientSize.Height - 1)
         End Using
     End Sub

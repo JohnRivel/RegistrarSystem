@@ -72,7 +72,7 @@ Partial Class DashboardForm
         Me.lblInfo.AutoSize = False
         Me.lblInfo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lblInfo.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        Me.lblInfo.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblInfo.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblInfo.Location = New System.Drawing.Point(814, 22)
         Me.lblInfo.Size = New System.Drawing.Size(200, 40)
         Me.lblInfo.Name = "lblInfo"
@@ -80,7 +80,7 @@ Partial Class DashboardForm
         Me.lblInfo.Text = "Logged in as" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Today"
         Me.lblInfo.TextAlign = System.Drawing.ContentAlignment.TopRight
         Me.lblChipToday.AutoSize = False
-        Me.lblChipToday.BackColor = System.Drawing.Color.FromArgb(232, 172, 48)
+        Me.lblChipToday.BackColor = System.Drawing.Color.FromArgb(206, 166, 82)
         Me.lblChipToday.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.lblChipToday.ForeColor = System.Drawing.Color.White
         Me.lblChipToday.Location = New System.Drawing.Point(28, 70)
@@ -90,7 +90,7 @@ Partial Class DashboardForm
         Me.lblChipToday.Text = "Requests Today: 0"
         Me.lblChipToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblChipPaidToday.AutoSize = False
-        Me.lblChipPaidToday.BackColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        Me.lblChipPaidToday.BackColor = System.Drawing.Color.FromArgb(62, 104, 186)
         Me.lblChipPaidToday.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.lblChipPaidToday.ForeColor = System.Drawing.Color.White
         Me.lblChipPaidToday.Location = New System.Drawing.Point(290, 70)
@@ -100,7 +100,7 @@ Partial Class DashboardForm
         Me.lblChipPaidToday.Text = "Collected Today: ₱0.00"
         Me.lblChipPaidToday.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.lblChipMonth.AutoSize = False
-        Me.lblChipMonth.BackColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        Me.lblChipMonth.BackColor = System.Drawing.Color.FromArgb(62, 104, 186)
         Me.lblChipMonth.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.lblChipMonth.ForeColor = System.Drawing.Color.White
         Me.lblChipMonth.Location = New System.Drawing.Point(552, 70)
@@ -109,7 +109,7 @@ Partial Class DashboardForm
         Me.lblChipMonth.TabIndex = 4
         Me.lblChipMonth.Text = "Collected This Month: ₱0.00"
         Me.lblChipMonth.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.tileStudents.BackColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        Me.tileStudents.BackColor = System.Drawing.Color.FromArgb(62, 104, 186)
         Me.tileStudents.Controls.Add(Me.tileStudentsIcon)
         Me.tileStudents.Controls.Add(Me.tileStudentsNum)
         Me.tileStudents.Controls.Add(Me.tileStudentsCaption)
@@ -137,12 +137,12 @@ Partial Class DashboardForm
         Me.tileStudentsIcon.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.tileStudentsIcon.AutoSize = True
         Me.tileStudentsIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 36.0!)
-        Me.tileStudentsIcon.ForeColor = System.Drawing.Color.FromArgb(146, 177, 255)
+        Me.tileStudentsIcon.ForeColor = System.Drawing.Color.FromArgb(236, 206, 140)
         Me.tileStudentsIcon.Location = New System.Drawing.Point(170, 22)
         Me.tileStudentsIcon.Text = ""
         Me.tileStudentsIcon.Name = "tileStudentsIcon"
         Me.tileStudentsIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tilePending.BackColor = System.Drawing.Color.FromArgb(230, 126, 34)
+        Me.tilePending.BackColor = System.Drawing.Color.FromArgb(204, 132, 72)
         Me.tilePending.Controls.Add(Me.tilePendingIcon)
         Me.tilePending.Controls.Add(Me.tilePendingNum)
         Me.tilePending.Controls.Add(Me.tilePendingCaption)
@@ -175,7 +175,7 @@ Partial Class DashboardForm
         Me.tilePendingIcon.Text = ""
         Me.tilePendingIcon.Name = "tilePendingIcon"
         Me.tilePendingIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tileProcessing.BackColor = System.Drawing.Color.FromArgb(160, 106, 222)
+        Me.tileProcessing.BackColor = System.Drawing.Color.FromArgb(138, 112, 190)
         Me.tileProcessing.Controls.Add(Me.tileProcessingIcon)
         Me.tileProcessing.Controls.Add(Me.tileProcessingNum)
         Me.tileProcessing.Controls.Add(Me.tileProcessingCaption)
@@ -208,7 +208,7 @@ Partial Class DashboardForm
         Me.tileProcessingIcon.Text = ""
         Me.tileProcessingIcon.Name = "tileProcessingIcon"
         Me.tileProcessingIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tileReady.BackColor = System.Drawing.Color.FromArgb(232, 172, 48)
+        Me.tileReady.BackColor = System.Drawing.Color.FromArgb(206, 166, 82)
         Me.tileReady.Controls.Add(Me.tileReadyIcon)
         Me.tileReady.Controls.Add(Me.tileReadyNum)
         Me.tileReady.Controls.Add(Me.tileReadyCaption)
@@ -241,7 +241,7 @@ Partial Class DashboardForm
         Me.tileReadyIcon.Text = ""
         Me.tileReadyIcon.Name = "tileReadyIcon"
         Me.tileReadyIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tileReleased.BackColor = System.Drawing.Color.FromArgb(38, 170, 118)
+        Me.tileReleased.BackColor = System.Drawing.Color.FromArgb(62, 150, 116)
         Me.tileReleased.Controls.Add(Me.tileReleasedIcon)
         Me.tileReleased.Controls.Add(Me.tileReleasedNum)
         Me.tileReleased.Controls.Add(Me.tileReleasedCaption)
@@ -274,7 +274,7 @@ Partial Class DashboardForm
         Me.tileReleasedIcon.Text = ""
         Me.tileReleasedIcon.Name = "tileReleasedIcon"
         Me.tileReleasedIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tileCancelled.BackColor = System.Drawing.Color.FromArgb(228, 84, 108)
+        Me.tileCancelled.BackColor = System.Drawing.Color.FromArgb(196, 96, 112)
         Me.tileCancelled.Controls.Add(Me.tileCancelledIcon)
         Me.tileCancelled.Controls.Add(Me.tileCancelledNum)
         Me.tileCancelled.Controls.Add(Me.tileCancelledCaption)
@@ -307,7 +307,7 @@ Partial Class DashboardForm
         Me.tileCancelledIcon.Text = ""
         Me.tileCancelledIcon.Name = "tileCancelledIcon"
         Me.tileCancelledIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tileUnpaid.BackColor = System.Drawing.Color.FromArgb(22, 170, 168)
+        Me.tileUnpaid.BackColor = System.Drawing.Color.FromArgb(58, 150, 150)
         Me.tileUnpaid.Controls.Add(Me.tileUnpaidIcon)
         Me.tileUnpaid.Controls.Add(Me.tileUnpaidNum)
         Me.tileUnpaid.Controls.Add(Me.tileUnpaidCaption)
@@ -340,7 +340,7 @@ Partial Class DashboardForm
         Me.tileUnpaidIcon.Text = ""
         Me.tileUnpaidIcon.Name = "tileUnpaidIcon"
         Me.tileUnpaidIcon.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.tileDocuments.BackColor = System.Drawing.Color.FromArgb(84, 150, 226)
+        Me.tileDocuments.BackColor = System.Drawing.Color.FromArgb(92, 138, 196)
         Me.tileDocuments.Controls.Add(Me.tileDocumentsIcon)
         Me.tileDocuments.Controls.Add(Me.tileDocumentsNum)
         Me.tileDocuments.Controls.Add(Me.tileDocumentsCaption)
@@ -404,36 +404,36 @@ Partial Class DashboardForm
         Me.grid.AllowUserToAddRows = False
         Me.grid.AllowUserToDeleteRows = False
         Me.grid.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(57, 61, 80)
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(51, 64, 98)
         Me.grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.grid.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.grid.BackgroundColor = System.Drawing.Color.FromArgb(51, 55, 72)
+        Me.grid.BackgroundColor = System.Drawing.Color.FromArgb(46, 58, 90)
         Me.grid.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(31, 33, 45)
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(30, 39, 64)
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(31, 33, 45)
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(30, 39, 64)
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.grid.ColumnHeadersHeight = 40
         Me.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(46, 58, 90)
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(6, 0, 4, 0)
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(62, 104, 186)
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.grid.DefaultCellStyle = DataGridViewCellStyle3
         Me.grid.EnableHeadersVisualStyles = False
-        Me.grid.GridColor = System.Drawing.Color.FromArgb(76, 81, 104)
+        Me.grid.GridColor = System.Drawing.Color.FromArgb(68, 82, 118)
         Me.grid.Location = New System.Drawing.Point(28, 412)
         Me.grid.MultiSelect = False
         Me.grid.ReadOnly = True
@@ -445,7 +445,7 @@ Partial Class DashboardForm
         Me.grid.TabIndex = 15
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.FromArgb(41, 44, 58)
+        Me.BackColor = System.Drawing.Color.FromArgb(37, 47, 75)
         Me.ClientSize = New System.Drawing.Size(1040, 640)
         Me.Controls.Add(Me.lblWelcome)
         Me.Controls.Add(Me.lblInfo)
@@ -456,7 +456,7 @@ Partial Class DashboardForm
         Me.Controls.Add(Me.lblRecent)
         Me.Controls.Add(Me.grid)
         Me.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "DashboardForm"
         Me.Text = "Dashboard"

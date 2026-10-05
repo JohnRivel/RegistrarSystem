@@ -12,6 +12,10 @@ Public Class MainForm
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Current = Me
+        Icon = SchoolIcon
+        lblBrandIcon.Text = ""
+        lblBrandIcon.Image = New Bitmap(My.Resources.school_logo, 36, 36)
+        lblBrandIcon.ImageAlign = ContentAlignment.MiddleCenter
         lblUser.Text = $"{Session.FullName}  ({Session.Role})"
 
         btnDocuments.Visible = Session.IsAdmin
@@ -108,7 +112,7 @@ Public Class MainForm
         For Each b In NavButtons()
             Dim active = CStr(b.Tag) = key
             b.BackColor = If(active, ColCard, ColBar)
-            b.ForeColor = If(active, Color.White, ColMuted)
+            b.ForeColor = If(active, ColGold, ColMuted)
         Next
     End Sub
 

@@ -17,7 +17,7 @@ Public Class StudentPickerDialog
                 "       Course, YearLevel AS `Year Level`, Section " &
                 "  FROM tblstudents " &
                 " WHERE Status = 'Active' " &
-                "   AND (StudentID LIKE @q OR LRN LIKE @q OR LastName LIKE @q OR FirstName LIKE @q " &
+                "   AND (StudentID LIKE @q OR LastName LIKE @q OR FirstName LIKE @q " &
                 "        OR CONCAT(FirstName, ' ', LastName) LIKE @q OR CONCAT(LastName, ', ', FirstName) LIKE @q) " &
                 " ORDER BY StudentID",
                 Db.P("@q", "%" & txtSearch.Text.Trim() & "%"))

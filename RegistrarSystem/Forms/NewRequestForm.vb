@@ -37,6 +37,21 @@ Public Class NewRequestForm
         Catch ex As Exception
             Ui.ShowError(ex)
         End Try
+        UpdateAmount()
+    End Sub
+
+    Private Sub DocOrQty_Changed(sender As Object, e As EventArgs) Handles cboDoc.SelectedIndexChanged, numQty.ValueChanged
+        UpdateAmount()
+    End Sub
+
+    Private Sub UpdateAmount()
+        Dim doc = TryCast(cboDoc.SelectedItem, DocItem)
+        If doc Is Nothing Then
+            lblAmount.Text = "Select a document to see its amount."
+            Return
+        End If
+        Dim qty = CInt(numQty.Value)
+        lblAmount.Text = $"Fee: {Money(doc.Fee)}   x   {qty}   =   Amount: {Money(doc.Fee * qty)}"
     End Sub
 
     Private Sub ShowPreviewNumber()

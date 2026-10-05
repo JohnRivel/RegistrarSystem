@@ -17,587 +17,749 @@ Partial Class RequestDetailsDialog
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Me.flpHeader = New System.Windows.Forms.FlowLayoutPanel()
-        Me.lblReqNo = New System.Windows.Forms.Label()
-        Me.lblStatusBadge = New System.Windows.Forms.Label()
-        Me.lblPayBadge = New System.Windows.Forms.Label()
-        Me.pnlInfo = New System.Windows.Forms.Panel()
-        Me.lblInfoIcon = New System.Windows.Forms.Label()
-        Me.lblInfoTitle = New System.Windows.Forms.Label()
-        Me.lblDateCap = New System.Windows.Forms.Label()
-        Me.txtDate = New System.Windows.Forms.TextBox()
-        Me.lblStudentIdCap = New System.Windows.Forms.Label()
-        Me.txtStudentId = New System.Windows.Forms.TextBox()
-        Me.lblStudentCap = New System.Windows.Forms.Label()
-        Me.txtStudent = New System.Windows.Forms.TextBox()
-        Me.lblCourseCap = New System.Windows.Forms.Label()
-        Me.txtCourse = New System.Windows.Forms.TextBox()
-        Me.lblContactCap = New System.Windows.Forms.Label()
-        Me.txtContact = New System.Windows.Forms.TextBox()
-        Me.lblByCap = New System.Windows.Forms.Label()
-        Me.txtBy = New System.Windows.Forms.TextBox()
-        Me.lblReleasedCap = New System.Windows.Forms.Label()
-        Me.txtReleased = New System.Windows.Forms.TextBox()
-        Me.pnlDocs = New System.Windows.Forms.Panel()
-        Me.lblDocsIcon = New System.Windows.Forms.Label()
-        Me.lblDocsTitle = New System.Windows.Forms.Label()
-        Me.gridDocs = New System.Windows.Forms.DataGridView()
-        Me.lblTotal = New System.Windows.Forms.Label()
-        Me.pnlPay = New System.Windows.Forms.Panel()
-        Me.lblPayIcon = New System.Windows.Forms.Label()
-        Me.lblPayTitle = New System.Windows.Forms.Label()
-        Me.lblPayStatusCap = New System.Windows.Forms.Label()
-        Me.cboPay = New System.Windows.Forms.ComboBox()
-        Me.lblOrCap = New System.Windows.Forms.Label()
-        Me.txtOr = New System.Windows.Forms.TextBox()
-        Me.lblOrDateCap = New System.Windows.Forms.Label()
-        Me.dtpOr = New System.Windows.Forms.DateTimePicker()
-        Me.lblPaidCap = New System.Windows.Forms.Label()
-        Me.numPaid = New System.Windows.Forms.NumericUpDown()
-        Me.lblChange = New System.Windows.Forms.Label()
-        Me.btnSavePay = New System.Windows.Forms.Button()
-        Me.pnlStatus = New System.Windows.Forms.Panel()
-        Me.lblStatusIcon = New System.Windows.Forms.Label()
-        Me.lblStatusTitle = New System.Windows.Forms.Label()
-        Me.lblCurrentCap = New System.Windows.Forms.Label()
-        Me.txtCurrent = New System.Windows.Forms.TextBox()
-        Me.lblNextCap = New System.Windows.Forms.Label()
-        Me.cboNext = New System.Windows.Forms.ComboBox()
-        Me.lblStatusHint = New System.Windows.Forms.Label()
-        Me.btnStatus = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
-        CType(Me.gridDocs, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.numPaid, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        Me.flpHeader.Controls.Add(Me.lblReqNo)
-        Me.flpHeader.Controls.Add(Me.lblStatusBadge)
-        Me.flpHeader.Controls.Add(Me.lblPayBadge)
-        Me.flpHeader.Location = New System.Drawing.Point(26, 16)
-        Me.flpHeader.Size = New System.Drawing.Size(900, 46)
-        Me.flpHeader.Name = "flpHeader"
-        Me.flpHeader.TabIndex = 0
-        Me.flpHeader.WrapContents = False
-        Me.lblReqNo.AutoSize = True
-        Me.lblReqNo.Margin = New System.Windows.Forms.Padding(0, 0, 12, 0)
-        Me.lblReqNo.Font = New System.Drawing.Font("Segoe UI Semibold", 18.0!)
-        Me.lblReqNo.Location = New System.Drawing.Point(0, 0)
-        Me.lblReqNo.Size = New System.Drawing.Size(40, 19)
-        Me.lblReqNo.Name = "lblReqNo"
-        Me.lblReqNo.TabIndex = 1
-        Me.lblReqNo.Text = "REQ-2026-00000"
-        Me.lblStatusBadge.AutoSize = True
-        Me.lblStatusBadge.Margin = New System.Windows.Forms.Padding(0, 8, 8, 0)
-        Me.lblStatusBadge.BackColor = System.Drawing.Color.FromArgb(232, 172, 48)
-        Me.lblStatusBadge.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.lblStatusBadge.ForeColor = System.Drawing.Color.White
-        Me.lblStatusBadge.Location = New System.Drawing.Point(0, 0)
-        Me.lblStatusBadge.Padding = New System.Windows.Forms.Padding(10, 4, 10, 4)
-        Me.lblStatusBadge.Size = New System.Drawing.Size(40, 19)
-        Me.lblStatusBadge.Name = "lblStatusBadge"
-        Me.lblStatusBadge.TabIndex = 2
-        Me.lblStatusBadge.Text = "Pending"
-        Me.lblPayBadge.AutoSize = True
-        Me.lblPayBadge.Margin = New System.Windows.Forms.Padding(0, 8, 8, 0)
-        Me.lblPayBadge.BackColor = System.Drawing.Color.FromArgb(230, 126, 34)
-        Me.lblPayBadge.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.lblPayBadge.ForeColor = System.Drawing.Color.White
-        Me.lblPayBadge.Location = New System.Drawing.Point(0, 0)
-        Me.lblPayBadge.Padding = New System.Windows.Forms.Padding(10, 4, 10, 4)
-        Me.lblPayBadge.Size = New System.Drawing.Size(40, 19)
-        Me.lblPayBadge.Name = "lblPayBadge"
-        Me.lblPayBadge.TabIndex = 3
-        Me.lblPayBadge.Text = "Unpaid"
-        Me.pnlInfo.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.pnlInfo.Controls.Add(Me.lblInfoIcon)
-        Me.pnlInfo.Controls.Add(Me.lblInfoTitle)
-        Me.pnlInfo.Controls.Add(Me.lblDateCap)
-        Me.pnlInfo.Controls.Add(Me.txtDate)
-        Me.pnlInfo.Controls.Add(Me.lblStudentIdCap)
-        Me.pnlInfo.Controls.Add(Me.txtStudentId)
-        Me.pnlInfo.Controls.Add(Me.lblStudentCap)
-        Me.pnlInfo.Controls.Add(Me.txtStudent)
-        Me.pnlInfo.Controls.Add(Me.lblCourseCap)
-        Me.pnlInfo.Controls.Add(Me.txtCourse)
-        Me.pnlInfo.Controls.Add(Me.lblContactCap)
-        Me.pnlInfo.Controls.Add(Me.txtContact)
-        Me.pnlInfo.Controls.Add(Me.lblByCap)
-        Me.pnlInfo.Controls.Add(Me.txtBy)
-        Me.pnlInfo.Controls.Add(Me.lblReleasedCap)
-        Me.pnlInfo.Controls.Add(Me.txtReleased)
-        Me.pnlInfo.Location = New System.Drawing.Point(26, 72)
-        Me.pnlInfo.Size = New System.Drawing.Size(1008, 178)
-        Me.pnlInfo.Name = "pnlInfo"
-        Me.pnlInfo.TabIndex = 4
-        Me.lblInfoIcon.AutoSize = True
-        Me.lblInfoIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!)
-        Me.lblInfoIcon.ForeColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.lblInfoIcon.Location = New System.Drawing.Point(16, 14)
-        Me.lblInfoIcon.Size = New System.Drawing.Size(40, 19)
-        Me.lblInfoIcon.Name = "lblInfoIcon"
-        Me.lblInfoIcon.TabIndex = 5
-        Me.lblInfoIcon.Text = ""
-        Me.lblInfoTitle.AutoSize = True
-        Me.lblInfoTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!)
-        Me.lblInfoTitle.Location = New System.Drawing.Point(40, 12)
-        Me.lblInfoTitle.Size = New System.Drawing.Size(40, 19)
-        Me.lblInfoTitle.Name = "lblInfoTitle"
-        Me.lblInfoTitle.TabIndex = 6
-        Me.lblInfoTitle.Text = "Request Information"
-        Me.lblDateCap.AutoSize = True
-        Me.lblDateCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblDateCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblDateCap.Location = New System.Drawing.Point(18, 44)
-        Me.lblDateCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblDateCap.Name = "lblDateCap"
-        Me.lblDateCap.TabIndex = 7
-        Me.lblDateCap.Text = "Request Date"
-        Me.txtDate.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtDate.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDate.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtDate.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtDate.Location = New System.Drawing.Point(18, 66)
-        Me.txtDate.ReadOnly = True
-        Me.txtDate.Size = New System.Drawing.Size(230, 26)
-        Me.txtDate.Name = "txtDate"
-        Me.txtDate.TabIndex = 8
-        Me.txtDate.TabStop = False
-        Me.lblStudentIdCap.AutoSize = True
-        Me.lblStudentIdCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblStudentIdCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblStudentIdCap.Location = New System.Drawing.Point(266, 44)
-        Me.lblStudentIdCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblStudentIdCap.Name = "lblStudentIdCap"
-        Me.lblStudentIdCap.TabIndex = 9
-        Me.lblStudentIdCap.Text = "Student ID"
-        Me.txtStudentId.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtStudentId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtStudentId.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtStudentId.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtStudentId.Location = New System.Drawing.Point(266, 66)
-        Me.txtStudentId.ReadOnly = True
-        Me.txtStudentId.Size = New System.Drawing.Size(230, 26)
-        Me.txtStudentId.Name = "txtStudentId"
-        Me.txtStudentId.TabIndex = 10
-        Me.txtStudentId.TabStop = False
-        Me.lblStudentCap.AutoSize = True
-        Me.lblStudentCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblStudentCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblStudentCap.Location = New System.Drawing.Point(514, 44)
-        Me.lblStudentCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblStudentCap.Name = "lblStudentCap"
-        Me.lblStudentCap.TabIndex = 11
-        Me.lblStudentCap.Text = "Student Name"
-        Me.txtStudent.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtStudent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtStudent.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtStudent.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtStudent.Location = New System.Drawing.Point(514, 66)
-        Me.txtStudent.ReadOnly = True
-        Me.txtStudent.Size = New System.Drawing.Size(476, 26)
-        Me.txtStudent.Name = "txtStudent"
-        Me.txtStudent.TabIndex = 12
-        Me.txtStudent.TabStop = False
-        Me.lblCourseCap.AutoSize = True
-        Me.lblCourseCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblCourseCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblCourseCap.Location = New System.Drawing.Point(18, 104)
-        Me.lblCourseCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblCourseCap.Name = "lblCourseCap"
-        Me.lblCourseCap.TabIndex = 13
-        Me.lblCourseCap.Text = "Course / Year / Section"
-        Me.txtCourse.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtCourse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCourse.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtCourse.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtCourse.Location = New System.Drawing.Point(18, 126)
-        Me.txtCourse.ReadOnly = True
-        Me.txtCourse.Size = New System.Drawing.Size(230, 26)
-        Me.txtCourse.Name = "txtCourse"
-        Me.txtCourse.TabIndex = 14
-        Me.txtCourse.TabStop = False
-        Me.lblContactCap.AutoSize = True
-        Me.lblContactCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblContactCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblContactCap.Location = New System.Drawing.Point(266, 104)
-        Me.lblContactCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblContactCap.Name = "lblContactCap"
-        Me.lblContactCap.TabIndex = 15
-        Me.lblContactCap.Text = "Contact No."
-        Me.txtContact.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtContact.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtContact.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtContact.Location = New System.Drawing.Point(266, 126)
-        Me.txtContact.ReadOnly = True
-        Me.txtContact.Size = New System.Drawing.Size(230, 26)
-        Me.txtContact.Name = "txtContact"
-        Me.txtContact.TabIndex = 16
-        Me.txtContact.TabStop = False
-        Me.lblByCap.AutoSize = True
-        Me.lblByCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblByCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblByCap.Location = New System.Drawing.Point(514, 104)
-        Me.lblByCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblByCap.Name = "lblByCap"
-        Me.lblByCap.TabIndex = 17
-        Me.lblByCap.Text = "Processed By"
-        Me.txtBy.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtBy.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtBy.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtBy.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtBy.Location = New System.Drawing.Point(514, 126)
-        Me.txtBy.ReadOnly = True
-        Me.txtBy.Size = New System.Drawing.Size(230, 26)
-        Me.txtBy.Name = "txtBy"
-        Me.txtBy.TabIndex = 18
-        Me.txtBy.TabStop = False
-        Me.lblReleasedCap.AutoSize = True
-        Me.lblReleasedCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblReleasedCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblReleasedCap.Location = New System.Drawing.Point(762, 104)
-        Me.lblReleasedCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblReleasedCap.Name = "lblReleasedCap"
-        Me.lblReleasedCap.TabIndex = 19
-        Me.lblReleasedCap.Text = "Released On"
-        Me.txtReleased.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtReleased.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtReleased.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtReleased.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtReleased.Location = New System.Drawing.Point(762, 126)
-        Me.txtReleased.ReadOnly = True
-        Me.txtReleased.Size = New System.Drawing.Size(228, 26)
-        Me.txtReleased.Name = "txtReleased"
-        Me.txtReleased.TabIndex = 20
-        Me.txtReleased.TabStop = False
-        Me.pnlDocs.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.pnlDocs.Controls.Add(Me.lblDocsIcon)
-        Me.pnlDocs.Controls.Add(Me.lblDocsTitle)
-        Me.pnlDocs.Controls.Add(Me.gridDocs)
-        Me.pnlDocs.Controls.Add(Me.lblTotal)
-        Me.pnlDocs.Location = New System.Drawing.Point(26, 264)
-        Me.pnlDocs.Size = New System.Drawing.Size(500, 380)
-        Me.pnlDocs.Name = "pnlDocs"
-        Me.pnlDocs.TabIndex = 21
-        Me.lblDocsIcon.AutoSize = True
-        Me.lblDocsIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!)
-        Me.lblDocsIcon.ForeColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.lblDocsIcon.Location = New System.Drawing.Point(16, 14)
-        Me.lblDocsIcon.Size = New System.Drawing.Size(40, 19)
-        Me.lblDocsIcon.Name = "lblDocsIcon"
-        Me.lblDocsIcon.TabIndex = 22
-        Me.lblDocsIcon.Text = ""
-        Me.lblDocsTitle.AutoSize = True
-        Me.lblDocsTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!)
-        Me.lblDocsTitle.Location = New System.Drawing.Point(40, 12)
-        Me.lblDocsTitle.Size = New System.Drawing.Size(40, 19)
-        Me.lblDocsTitle.Name = "lblDocsTitle"
-        Me.lblDocsTitle.TabIndex = 23
-        Me.lblDocsTitle.Text = "Requested Documents"
-        Me.gridDocs.AllowUserToAddRows = False
-        Me.gridDocs.AllowUserToDeleteRows = False
-        Me.gridDocs.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(57, 61, 80)
-        Me.gridDocs.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
-        Me.gridDocs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.gridDocs.BackgroundColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.gridDocs.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.gridDocs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
-        Me.gridDocs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(31, 33, 45)
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(31, 33, 45)
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.gridDocs.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.gridDocs.ColumnHeadersHeight = 40
-        Me.gridDocs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
-        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(6, 0, 4, 0)
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
-        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.gridDocs.DefaultCellStyle = DataGridViewCellStyle3
-        Me.gridDocs.EnableHeadersVisualStyles = False
-        Me.gridDocs.GridColor = System.Drawing.Color.FromArgb(76, 81, 104)
-        Me.gridDocs.Location = New System.Drawing.Point(18, 44)
-        Me.gridDocs.MultiSelect = False
-        Me.gridDocs.ReadOnly = True
-        Me.gridDocs.RowHeadersVisible = False
-        Me.gridDocs.RowTemplate.Height = 34
-        Me.gridDocs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.gridDocs.Size = New System.Drawing.Size(464, 280)
-        Me.gridDocs.Name = "gridDocs"
-        Me.gridDocs.TabIndex = 24
-        Me.lblTotal.AutoSize = False
-        Me.lblTotal.Font = New System.Drawing.Font("Segoe UI Semibold", 13.0!)
-        Me.lblTotal.ForeColor = System.Drawing.Color.FromArgb(38, 170, 118)
-        Me.lblTotal.Location = New System.Drawing.Point(18, 336)
-        Me.lblTotal.Size = New System.Drawing.Size(464, 30)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.TabIndex = 25
-        Me.lblTotal.Text = "Total Amount:  ₱0.00"
-        Me.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.pnlPay.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.pnlPay.Controls.Add(Me.lblPayIcon)
-        Me.pnlPay.Controls.Add(Me.lblPayTitle)
-        Me.pnlPay.Controls.Add(Me.lblPayStatusCap)
-        Me.pnlPay.Controls.Add(Me.cboPay)
-        Me.pnlPay.Controls.Add(Me.lblOrCap)
-        Me.pnlPay.Controls.Add(Me.txtOr)
-        Me.pnlPay.Controls.Add(Me.lblOrDateCap)
-        Me.pnlPay.Controls.Add(Me.dtpOr)
-        Me.pnlPay.Controls.Add(Me.lblPaidCap)
-        Me.pnlPay.Controls.Add(Me.numPaid)
-        Me.pnlPay.Controls.Add(Me.lblChange)
-        Me.pnlPay.Controls.Add(Me.btnSavePay)
-        Me.pnlPay.Location = New System.Drawing.Point(540, 264)
-        Me.pnlPay.Size = New System.Drawing.Size(494, 200)
-        Me.pnlPay.Name = "pnlPay"
-        Me.pnlPay.TabIndex = 26
-        Me.lblPayIcon.AutoSize = True
-        Me.lblPayIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!)
-        Me.lblPayIcon.ForeColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.lblPayIcon.Location = New System.Drawing.Point(16, 14)
-        Me.lblPayIcon.Size = New System.Drawing.Size(40, 19)
-        Me.lblPayIcon.Name = "lblPayIcon"
-        Me.lblPayIcon.TabIndex = 27
-        Me.lblPayIcon.Text = ""
-        Me.lblPayTitle.AutoSize = True
-        Me.lblPayTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!)
-        Me.lblPayTitle.Location = New System.Drawing.Point(40, 12)
-        Me.lblPayTitle.Size = New System.Drawing.Size(40, 19)
-        Me.lblPayTitle.Name = "lblPayTitle"
-        Me.lblPayTitle.TabIndex = 28
-        Me.lblPayTitle.Text = "Payment Information"
-        Me.lblPayStatusCap.AutoSize = True
-        Me.lblPayStatusCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblPayStatusCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblPayStatusCap.Location = New System.Drawing.Point(18, 44)
-        Me.lblPayStatusCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblPayStatusCap.Name = "lblPayStatusCap"
-        Me.lblPayStatusCap.TabIndex = 29
-        Me.lblPayStatusCap.Text = "Payment Status"
-        Me.cboPay.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.cboPay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cboPay.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboPay.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.cboPay.FormattingEnabled = True
-        Me.cboPay.Items.AddRange(New Object() {"Unpaid", "Paid"})
-        Me.cboPay.Location = New System.Drawing.Point(18, 66)
-        Me.cboPay.Size = New System.Drawing.Size(220, 27)
-        Me.cboPay.Name = "cboPay"
-        Me.cboPay.TabIndex = 30
-        Me.lblOrCap.AutoSize = True
-        Me.lblOrCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblOrCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblOrCap.Location = New System.Drawing.Point(256, 44)
-        Me.lblOrCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblOrCap.Name = "lblOrCap"
-        Me.lblOrCap.TabIndex = 31
-        Me.lblOrCap.Text = "OR Number"
-        Me.txtOr.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.txtOr.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtOr.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtOr.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtOr.Location = New System.Drawing.Point(256, 66)
-        Me.txtOr.MaxLength = 30
-        Me.txtOr.PlaceholderText = "e.g. OR-100010"
-        Me.txtOr.Size = New System.Drawing.Size(220, 26)
-        Me.txtOr.Name = "txtOr"
-        Me.txtOr.TabIndex = 32
-        Me.lblOrDateCap.AutoSize = True
-        Me.lblOrDateCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblOrDateCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblOrDateCap.Location = New System.Drawing.Point(18, 104)
-        Me.lblOrDateCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblOrDateCap.Name = "lblOrDateCap"
-        Me.lblOrDateCap.TabIndex = 33
-        Me.lblOrDateCap.Text = "OR Date"
-        Me.dtpOr.CustomFormat = "MM/dd/yyyy"
-        Me.dtpOr.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.dtpOr.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpOr.Location = New System.Drawing.Point(18, 126)
-        Me.dtpOr.Size = New System.Drawing.Size(220, 26)
-        Me.dtpOr.Name = "dtpOr"
-        Me.dtpOr.TabIndex = 34
-        Me.lblPaidCap.AutoSize = True
-        Me.lblPaidCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblPaidCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblPaidCap.Location = New System.Drawing.Point(256, 104)
-        Me.lblPaidCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblPaidCap.Name = "lblPaidCap"
-        Me.lblPaidCap.TabIndex = 35
-        Me.lblPaidCap.Text = "Amount Paid (₱)"
-        Me.numPaid.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.numPaid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.numPaid.DecimalPlaces = 2
-        Me.numPaid.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.numPaid.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.numPaid.Location = New System.Drawing.Point(256, 126)
-        Me.numPaid.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
-        Me.numPaid.Size = New System.Drawing.Size(220, 26)
-        Me.numPaid.Name = "numPaid"
-        Me.numPaid.TabIndex = 36
-        Me.numPaid.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.numPaid.ThousandsSeparator = True
-        Me.lblChange.AutoSize = True
-        Me.lblChange.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        Me.lblChange.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblChange.Location = New System.Drawing.Point(18, 166)
-        Me.lblChange.Size = New System.Drawing.Size(40, 19)
-        Me.lblChange.Name = "lblChange"
-        Me.lblChange.TabIndex = 37
-        Me.lblChange.Text = "Amount due"
-        Me.btnSavePay.BackColor = System.Drawing.Color.FromArgb(38, 170, 118)
-        Me.btnSavePay.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSavePay.FlatAppearance.BorderSize = 0
-        Me.btnSavePay.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(81, 187, 145)
-        Me.btnSavePay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSavePay.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.btnSavePay.ForeColor = System.Drawing.Color.White
-        Me.btnSavePay.Image = Global.RegistrarSystem.My.Resources.Resources.btn_money
-        Me.btnSavePay.Location = New System.Drawing.Point(326, 158)
-        Me.btnSavePay.Size = New System.Drawing.Size(150, 34)
-        Me.btnSavePay.Name = "btnSavePay"
-        Me.btnSavePay.TabIndex = 38
-        Me.btnSavePay.Text = " Save Payment"
-        Me.btnSavePay.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnSavePay.UseVisualStyleBackColor = False
-        Me.pnlStatus.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
-        Me.pnlStatus.Controls.Add(Me.lblStatusIcon)
-        Me.pnlStatus.Controls.Add(Me.lblStatusTitle)
-        Me.pnlStatus.Controls.Add(Me.lblCurrentCap)
-        Me.pnlStatus.Controls.Add(Me.txtCurrent)
-        Me.pnlStatus.Controls.Add(Me.lblNextCap)
-        Me.pnlStatus.Controls.Add(Me.cboNext)
-        Me.pnlStatus.Controls.Add(Me.lblStatusHint)
-        Me.pnlStatus.Controls.Add(Me.btnStatus)
-        Me.pnlStatus.Location = New System.Drawing.Point(540, 478)
-        Me.pnlStatus.Size = New System.Drawing.Size(494, 166)
-        Me.pnlStatus.Name = "pnlStatus"
-        Me.pnlStatus.TabIndex = 39
-        Me.lblStatusIcon.AutoSize = True
-        Me.lblStatusIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 12.0!)
-        Me.lblStatusIcon.ForeColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.lblStatusIcon.Location = New System.Drawing.Point(16, 14)
-        Me.lblStatusIcon.Size = New System.Drawing.Size(40, 19)
-        Me.lblStatusIcon.Name = "lblStatusIcon"
-        Me.lblStatusIcon.TabIndex = 40
-        Me.lblStatusIcon.Text = ""
-        Me.lblStatusTitle.AutoSize = True
-        Me.lblStatusTitle.Font = New System.Drawing.Font("Segoe UI Semibold", 11.0!)
-        Me.lblStatusTitle.Location = New System.Drawing.Point(40, 12)
-        Me.lblStatusTitle.Size = New System.Drawing.Size(40, 19)
-        Me.lblStatusTitle.Name = "lblStatusTitle"
-        Me.lblStatusTitle.TabIndex = 41
-        Me.lblStatusTitle.Text = "Request Status"
-        Me.lblCurrentCap.AutoSize = True
-        Me.lblCurrentCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblCurrentCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblCurrentCap.Location = New System.Drawing.Point(18, 44)
-        Me.lblCurrentCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblCurrentCap.Name = "lblCurrentCap"
-        Me.lblCurrentCap.TabIndex = 42
-        Me.lblCurrentCap.Text = "Current Status"
-        Me.txtCurrent.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtCurrent.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtCurrent.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtCurrent.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtCurrent.Location = New System.Drawing.Point(18, 66)
-        Me.txtCurrent.ReadOnly = True
-        Me.txtCurrent.Size = New System.Drawing.Size(220, 26)
-        Me.txtCurrent.Name = "txtCurrent"
-        Me.txtCurrent.TabIndex = 43
-        Me.txtCurrent.TabStop = False
-        Me.lblNextCap.AutoSize = True
-        Me.lblNextCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblNextCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblNextCap.Location = New System.Drawing.Point(256, 44)
-        Me.lblNextCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblNextCap.Name = "lblNextCap"
-        Me.lblNextCap.TabIndex = 44
-        Me.lblNextCap.Text = "Change Status To"
-        Me.cboNext.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.cboNext.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cboNext.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboNext.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.cboNext.FormattingEnabled = True
-        Me.cboNext.Location = New System.Drawing.Point(256, 66)
-        Me.cboNext.Size = New System.Drawing.Size(220, 27)
-        Me.cboNext.Name = "cboNext"
-        Me.cboNext.TabIndex = 45
-        Me.lblStatusHint.AutoSize = False
-        Me.lblStatusHint.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblStatusHint.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblStatusHint.Location = New System.Drawing.Point(18, 104)
-        Me.lblStatusHint.Size = New System.Drawing.Size(290, 48)
-        Me.lblStatusHint.Name = "lblStatusHint"
-        Me.lblStatusHint.TabIndex = 46
-        Me.lblStatusHint.Text = "Flow: Pending > Processing > Ready for Release > Released"
-        Me.btnStatus.BackColor = System.Drawing.Color.FromArgb(74, 125, 255)
-        Me.btnStatus.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnStatus.FlatAppearance.BorderSize = 0
-        Me.btnStatus.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(110, 151, 255)
-        Me.btnStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnStatus.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.btnStatus.ForeColor = System.Drawing.Color.White
-        Me.btnStatus.Image = Global.RegistrarSystem.My.Resources.Resources.btn_sync
-        Me.btnStatus.Location = New System.Drawing.Point(326, 110)
-        Me.btnStatus.Size = New System.Drawing.Size(150, 34)
-        Me.btnStatus.Name = "btnStatus"
-        Me.btnStatus.TabIndex = 47
-        Me.btnStatus.Text = " Update Status"
-        Me.btnStatus.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnStatus.UseVisualStyleBackColor = False
-        Me.btnClose.BackColor = System.Drawing.Color.FromArgb(92, 98, 120)
-        Me.btnClose.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnClose.FlatAppearance.BorderSize = 0
-        Me.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(125, 129, 147)
-        Me.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnClose.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.btnClose.ForeColor = System.Drawing.Color.White
-        Me.btnClose.Location = New System.Drawing.Point(924, 660)
-        Me.btnClose.Size = New System.Drawing.Size(110, 36)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.TabIndex = 48
-        Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = False
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.FromArgb(41, 44, 58)
-        Me.CancelButton = Me.btnClose
-        Me.ClientSize = New System.Drawing.Size(1060, 712)
-        Me.Controls.Add(Me.flpHeader)
-        Me.Controls.Add(Me.pnlInfo)
-        Me.Controls.Add(Me.pnlDocs)
-        Me.Controls.Add(Me.pnlPay)
-        Me.Controls.Add(Me.pnlStatus)
-        Me.Controls.Add(Me.btnClose)
-        Me.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "RequestDetailsDialog"
-        Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Request Details"
-        CType(Me.gridDocs, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.numPaid, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        flpHeader = New FlowLayoutPanel()
+        lblReqNo = New Label()
+        lblStatusBadge = New Label()
+        lblPayBadge = New Label()
+        pnlInfo = New Panel()
+        lblInfoIcon = New Label()
+        lblInfoTitle = New Label()
+        lblDateCap = New Label()
+        txtDate = New TextBox()
+        lblStudentIdCap = New Label()
+        txtStudentId = New TextBox()
+        lblStudentCap = New Label()
+        txtStudent = New TextBox()
+        lblCourseCap = New Label()
+        txtCourse = New TextBox()
+        lblContactCap = New Label()
+        txtContact = New TextBox()
+        lblByCap = New Label()
+        txtBy = New TextBox()
+        lblReleasedCap = New Label()
+        txtReleased = New TextBox()
+        pnlDocs = New Panel()
+        lblDocsIcon = New Label()
+        lblDocsTitle = New Label()
+        gridDocs = New DataGridView()
+        lblTotal = New Label()
+        pnlPay = New Panel()
+        lblPayIcon = New Label()
+        lblPayTitle = New Label()
+        lblPayStatusCap = New Label()
+        cboPay = New ComboBox()
+        lblOrCap = New Label()
+        txtOr = New TextBox()
+        lblOrDateCap = New Label()
+        dtpOr = New DateTimePicker()
+        lblPaidCap = New Label()
+        numPaid = New NumericUpDown()
+        lblChange = New Label()
+        btnSavePay = New Button()
+        pnlStatus = New Panel()
+        lblStatusIcon = New Label()
+        lblStatusTitle = New Label()
+        lblCurrentCap = New Label()
+        txtCurrent = New TextBox()
+        lblNextCap = New Label()
+        cboNext = New ComboBox()
+        lblStatusHint = New Label()
+        btnStatus = New Button()
+        btnClose = New Button()
+        flpHeader.SuspendLayout()
+        pnlInfo.SuspendLayout()
+        pnlDocs.SuspendLayout()
+        CType(gridDocs, ComponentModel.ISupportInitialize).BeginInit()
+        pnlPay.SuspendLayout()
+        CType(numPaid, ComponentModel.ISupportInitialize).BeginInit()
+        pnlStatus.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' flpHeader
+        ' 
+        flpHeader.Controls.Add(lblReqNo)
+        flpHeader.Controls.Add(lblStatusBadge)
+        flpHeader.Controls.Add(lblPayBadge)
+        flpHeader.Location = New Point(26, 16)
+        flpHeader.Name = "flpHeader"
+        flpHeader.Size = New Size(900, 46)
+        flpHeader.TabIndex = 0
+        flpHeader.WrapContents = False
+        ' 
+        ' lblReqNo
+        ' 
+        lblReqNo.AutoSize = True
+        lblReqNo.Font = New Font("Segoe UI Semibold", 18F)
+        lblReqNo.Location = New Point(0, 0)
+        lblReqNo.Margin = New Padding(0, 0, 12, 0)
+        lblReqNo.Name = "lblReqNo"
+        lblReqNo.Size = New Size(196, 32)
+        lblReqNo.TabIndex = 1
+        lblReqNo.Text = "REQ-2026-00000"
+        ' 
+        ' lblStatusBadge
+        ' 
+        lblStatusBadge.AutoSize = True
+        lblStatusBadge.BackColor = Color.FromArgb(CByte(206), CByte(166), CByte(82))
+        lblStatusBadge.Font = New Font("Segoe UI Semibold", 9.5F)
+        lblStatusBadge.ForeColor = Color.White
+        lblStatusBadge.Location = New Point(208, 8)
+        lblStatusBadge.Margin = New Padding(0, 8, 8, 0)
+        lblStatusBadge.Name = "lblStatusBadge"
+        lblStatusBadge.Padding = New Padding(10, 4, 10, 4)
+        lblStatusBadge.Size = New Size(78, 25)
+        lblStatusBadge.TabIndex = 2
+        lblStatusBadge.Text = "Pending"
+        ' 
+        ' lblPayBadge
+        ' 
+        lblPayBadge.AutoSize = True
+        lblPayBadge.BackColor = Color.FromArgb(CByte(204), CByte(132), CByte(72))
+        lblPayBadge.Font = New Font("Segoe UI Semibold", 9.5F)
+        lblPayBadge.ForeColor = Color.White
+        lblPayBadge.Location = New Point(294, 8)
+        lblPayBadge.Margin = New Padding(0, 8, 8, 0)
+        lblPayBadge.Name = "lblPayBadge"
+        lblPayBadge.Padding = New Padding(10, 4, 10, 4)
+        lblPayBadge.Size = New Size(71, 25)
+        lblPayBadge.TabIndex = 3
+        lblPayBadge.Text = "Unpaid"
+        ' 
+        ' pnlInfo
+        ' 
+        pnlInfo.BackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        pnlInfo.Controls.Add(lblInfoIcon)
+        pnlInfo.Controls.Add(lblInfoTitle)
+        pnlInfo.Controls.Add(lblDateCap)
+        pnlInfo.Controls.Add(txtDate)
+        pnlInfo.Controls.Add(lblStudentIdCap)
+        pnlInfo.Controls.Add(txtStudentId)
+        pnlInfo.Controls.Add(lblStudentCap)
+        pnlInfo.Controls.Add(txtStudent)
+        pnlInfo.Controls.Add(lblCourseCap)
+        pnlInfo.Controls.Add(txtCourse)
+        pnlInfo.Controls.Add(lblContactCap)
+        pnlInfo.Controls.Add(txtContact)
+        pnlInfo.Controls.Add(lblByCap)
+        pnlInfo.Controls.Add(txtBy)
+        pnlInfo.Controls.Add(lblReleasedCap)
+        pnlInfo.Controls.Add(txtReleased)
+        pnlInfo.Location = New Point(26, 72)
+        pnlInfo.Name = "pnlInfo"
+        pnlInfo.Size = New Size(1008, 178)
+        pnlInfo.TabIndex = 4
+        ' 
+        ' lblInfoIcon
+        ' 
+        lblInfoIcon.AutoSize = True
+        lblInfoIcon.Font = New Font("Segoe MDL2 Assets", 12F)
+        lblInfoIcon.ForeColor = Color.FromArgb(CByte(226), CByte(186), CByte(92))
+        lblInfoIcon.Location = New Point(16, 14)
+        lblInfoIcon.Name = "lblInfoIcon"
+        lblInfoIcon.Size = New Size(23, 16)
+        lblInfoIcon.TabIndex = 5
+        lblInfoIcon.Text = ""
+        ' 
+        ' lblInfoTitle
+        ' 
+        lblInfoTitle.AutoSize = True
+        lblInfoTitle.Font = New Font("Segoe UI Semibold", 11F)
+        lblInfoTitle.Location = New Point(40, 12)
+        lblInfoTitle.Name = "lblInfoTitle"
+        lblInfoTitle.Size = New Size(148, 20)
+        lblInfoTitle.TabIndex = 6
+        lblInfoTitle.Text = "Request Information"
+        ' 
+        ' lblDateCap
+        ' 
+        lblDateCap.AutoSize = True
+        lblDateCap.Font = New Font("Segoe UI", 9F)
+        lblDateCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblDateCap.Location = New Point(18, 44)
+        lblDateCap.Name = "lblDateCap"
+        lblDateCap.Size = New Size(76, 15)
+        lblDateCap.TabIndex = 7
+        lblDateCap.Text = "Request Date"
+        ' 
+        ' txtDate
+        ' 
+        txtDate.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtDate.BorderStyle = BorderStyle.FixedSingle
+        txtDate.Font = New Font("Segoe UI", 10.5F)
+        txtDate.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtDate.Location = New Point(18, 66)
+        txtDate.Name = "txtDate"
+        txtDate.ReadOnly = True
+        txtDate.Size = New Size(230, 26)
+        txtDate.TabIndex = 8
+        txtDate.TabStop = False
+        ' 
+        ' lblStudentIdCap
+        ' 
+        lblStudentIdCap.AutoSize = True
+        lblStudentIdCap.Font = New Font("Segoe UI", 9F)
+        lblStudentIdCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblStudentIdCap.Location = New Point(266, 44)
+        lblStudentIdCap.Name = "lblStudentIdCap"
+        lblStudentIdCap.Size = New Size(62, 15)
+        lblStudentIdCap.TabIndex = 9
+        lblStudentIdCap.Text = "Student ID"
+        ' 
+        ' txtStudentId
+        ' 
+        txtStudentId.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtStudentId.BorderStyle = BorderStyle.FixedSingle
+        txtStudentId.Font = New Font("Segoe UI", 10.5F)
+        txtStudentId.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtStudentId.Location = New Point(266, 66)
+        txtStudentId.Name = "txtStudentId"
+        txtStudentId.ReadOnly = True
+        txtStudentId.Size = New Size(230, 26)
+        txtStudentId.TabIndex = 10
+        txtStudentId.TabStop = False
+        ' 
+        ' lblStudentCap
+        ' 
+        lblStudentCap.AutoSize = True
+        lblStudentCap.Font = New Font("Segoe UI", 9F)
+        lblStudentCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblStudentCap.Location = New Point(514, 44)
+        lblStudentCap.Name = "lblStudentCap"
+        lblStudentCap.Size = New Size(83, 15)
+        lblStudentCap.TabIndex = 11
+        lblStudentCap.Text = "Student Name"
+        ' 
+        ' txtStudent
+        ' 
+        txtStudent.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtStudent.BorderStyle = BorderStyle.FixedSingle
+        txtStudent.Font = New Font("Segoe UI", 10.5F)
+        txtStudent.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtStudent.Location = New Point(514, 66)
+        txtStudent.Name = "txtStudent"
+        txtStudent.ReadOnly = True
+        txtStudent.Size = New Size(476, 26)
+        txtStudent.TabIndex = 12
+        txtStudent.TabStop = False
+        ' 
+        ' lblCourseCap
+        ' 
+        lblCourseCap.AutoSize = True
+        lblCourseCap.Font = New Font("Segoe UI", 9F)
+        lblCourseCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblCourseCap.Location = New Point(18, 104)
+        lblCourseCap.Name = "lblCourseCap"
+        lblCourseCap.Size = New Size(127, 15)
+        lblCourseCap.TabIndex = 13
+        lblCourseCap.Text = "Course / Year / Section"
+        ' 
+        ' txtCourse
+        ' 
+        txtCourse.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtCourse.BorderStyle = BorderStyle.FixedSingle
+        txtCourse.Font = New Font("Segoe UI", 10.5F)
+        txtCourse.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtCourse.Location = New Point(18, 126)
+        txtCourse.Name = "txtCourse"
+        txtCourse.ReadOnly = True
+        txtCourse.Size = New Size(230, 26)
+        txtCourse.TabIndex = 14
+        txtCourse.TabStop = False
+        ' 
+        ' lblContactCap
+        ' 
+        lblContactCap.AutoSize = True
+        lblContactCap.Font = New Font("Segoe UI", 9F)
+        lblContactCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblContactCap.Location = New Point(266, 104)
+        lblContactCap.Name = "lblContactCap"
+        lblContactCap.Size = New Size(71, 15)
+        lblContactCap.TabIndex = 15
+        lblContactCap.Text = "Contact No."
+        ' 
+        ' txtContact
+        ' 
+        txtContact.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtContact.BorderStyle = BorderStyle.FixedSingle
+        txtContact.Font = New Font("Segoe UI", 10.5F)
+        txtContact.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtContact.Location = New Point(266, 126)
+        txtContact.Name = "txtContact"
+        txtContact.ReadOnly = True
+        txtContact.Size = New Size(230, 26)
+        txtContact.TabIndex = 16
+        txtContact.TabStop = False
+        ' 
+        ' lblByCap
+        ' 
+        lblByCap.AutoSize = True
+        lblByCap.Font = New Font("Segoe UI", 9F)
+        lblByCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblByCap.Location = New Point(514, 104)
+        lblByCap.Name = "lblByCap"
+        lblByCap.Size = New Size(76, 15)
+        lblByCap.TabIndex = 17
+        lblByCap.Text = "Processed By"
+        ' 
+        ' txtBy
+        ' 
+        txtBy.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtBy.BorderStyle = BorderStyle.FixedSingle
+        txtBy.Font = New Font("Segoe UI", 10.5F)
+        txtBy.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtBy.Location = New Point(514, 126)
+        txtBy.Name = "txtBy"
+        txtBy.ReadOnly = True
+        txtBy.Size = New Size(230, 26)
+        txtBy.TabIndex = 18
+        txtBy.TabStop = False
+        ' 
+        ' lblReleasedCap
+        ' 
+        lblReleasedCap.AutoSize = True
+        lblReleasedCap.Font = New Font("Segoe UI", 9F)
+        lblReleasedCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblReleasedCap.Location = New Point(762, 104)
+        lblReleasedCap.Name = "lblReleasedCap"
+        lblReleasedCap.Size = New Size(72, 15)
+        lblReleasedCap.TabIndex = 19
+        lblReleasedCap.Text = "Released On"
+        ' 
+        ' txtReleased
+        ' 
+        txtReleased.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtReleased.BorderStyle = BorderStyle.FixedSingle
+        txtReleased.Font = New Font("Segoe UI", 10.5F)
+        txtReleased.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtReleased.Location = New Point(762, 126)
+        txtReleased.Name = "txtReleased"
+        txtReleased.ReadOnly = True
+        txtReleased.Size = New Size(228, 26)
+        txtReleased.TabIndex = 20
+        txtReleased.TabStop = False
+        ' 
+        ' pnlDocs
+        ' 
+        pnlDocs.BackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        pnlDocs.Controls.Add(lblDocsIcon)
+        pnlDocs.Controls.Add(lblDocsTitle)
+        pnlDocs.Controls.Add(gridDocs)
+        pnlDocs.Controls.Add(lblTotal)
+        pnlDocs.Location = New Point(26, 264)
+        pnlDocs.Name = "pnlDocs"
+        pnlDocs.Size = New Size(500, 380)
+        pnlDocs.TabIndex = 21
+        ' 
+        ' lblDocsIcon
+        ' 
+        lblDocsIcon.AutoSize = True
+        lblDocsIcon.Font = New Font("Segoe MDL2 Assets", 12F)
+        lblDocsIcon.ForeColor = Color.FromArgb(CByte(226), CByte(186), CByte(92))
+        lblDocsIcon.Location = New Point(16, 14)
+        lblDocsIcon.Name = "lblDocsIcon"
+        lblDocsIcon.Size = New Size(23, 16)
+        lblDocsIcon.TabIndex = 22
+        lblDocsIcon.Text = ""
+        ' 
+        ' lblDocsTitle
+        ' 
+        lblDocsTitle.AutoSize = True
+        lblDocsTitle.Font = New Font("Segoe UI Semibold", 11F)
+        lblDocsTitle.Location = New Point(40, 12)
+        lblDocsTitle.Name = "lblDocsTitle"
+        lblDocsTitle.Size = New Size(161, 20)
+        lblDocsTitle.TabIndex = 23
+        lblDocsTitle.Text = "Requested Documents"
+        ' 
+        ' gridDocs
+        ' 
+        gridDocs.AllowUserToAddRows = False
+        gridDocs.AllowUserToDeleteRows = False
+        gridDocs.AllowUserToResizeRows = False
+        DataGridViewCellStyle1.BackColor = Color.FromArgb(CByte(51), CByte(64), CByte(98))
+        gridDocs.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
+        gridDocs.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        gridDocs.BackgroundColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        gridDocs.BorderStyle = BorderStyle.None
+        gridDocs.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal
+        gridDocs.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = Color.FromArgb(CByte(30), CByte(39), CByte(64))
+        DataGridViewCellStyle2.Font = New Font("Segoe UI Semibold", 9.5F)
+        DataGridViewCellStyle2.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        DataGridViewCellStyle2.Padding = New Padding(6, 0, 0, 0)
+        DataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(CByte(30), CByte(39), CByte(64))
+        DataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
+        gridDocs.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        gridDocs.ColumnHeadersHeight = 40
+        gridDocs.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.DisableResizing
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9.5F)
+        DataGridViewCellStyle3.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        DataGridViewCellStyle3.Padding = New Padding(6, 0, 4, 0)
+        DataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(CByte(62), CByte(104), CByte(186))
+        DataGridViewCellStyle3.SelectionForeColor = Color.White
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.False
+        gridDocs.DefaultCellStyle = DataGridViewCellStyle3
+        gridDocs.EnableHeadersVisualStyles = False
+        gridDocs.GridColor = Color.FromArgb(CByte(68), CByte(82), CByte(118))
+        gridDocs.Location = New Point(18, 44)
+        gridDocs.MultiSelect = False
+        gridDocs.Name = "gridDocs"
+        gridDocs.ReadOnly = True
+        gridDocs.RowHeadersVisible = False
+        gridDocs.RowTemplate.Height = 34
+        gridDocs.SelectionMode = DataGridViewSelectionMode.FullRowSelect
+        gridDocs.Size = New Size(464, 280)
+        gridDocs.TabIndex = 24
+        ' 
+        ' lblTotal
+        ' 
+        lblTotal.Font = New Font("Segoe UI Semibold", 13F)
+        lblTotal.ForeColor = Color.FromArgb(CByte(62), CByte(150), CByte(116))
+        lblTotal.Location = New Point(18, 336)
+        lblTotal.Name = "lblTotal"
+        lblTotal.Size = New Size(464, 30)
+        lblTotal.TabIndex = 25
+        lblTotal.Text = "Total Amount:  ₱0.00"
+        lblTotal.TextAlign = ContentAlignment.MiddleRight
+        ' 
+        ' pnlPay
+        ' 
+        pnlPay.BackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        pnlPay.Controls.Add(lblPayIcon)
+        pnlPay.Controls.Add(lblPayTitle)
+        pnlPay.Controls.Add(lblPayStatusCap)
+        pnlPay.Controls.Add(cboPay)
+        pnlPay.Controls.Add(lblOrCap)
+        pnlPay.Controls.Add(txtOr)
+        pnlPay.Controls.Add(lblOrDateCap)
+        pnlPay.Controls.Add(dtpOr)
+        pnlPay.Controls.Add(lblPaidCap)
+        pnlPay.Controls.Add(numPaid)
+        pnlPay.Controls.Add(lblChange)
+        pnlPay.Controls.Add(btnSavePay)
+        pnlPay.Location = New Point(540, 264)
+        pnlPay.Name = "pnlPay"
+        pnlPay.Size = New Size(494, 200)
+        pnlPay.TabIndex = 26
+        ' 
+        ' lblPayIcon
+        ' 
+        lblPayIcon.AutoSize = True
+        lblPayIcon.Font = New Font("Segoe MDL2 Assets", 12F)
+        lblPayIcon.ForeColor = Color.FromArgb(CByte(226), CByte(186), CByte(92))
+        lblPayIcon.Location = New Point(16, 14)
+        lblPayIcon.Name = "lblPayIcon"
+        lblPayIcon.Size = New Size(23, 16)
+        lblPayIcon.TabIndex = 27
+        lblPayIcon.Text = ""
+        ' 
+        ' lblPayTitle
+        ' 
+        lblPayTitle.AutoSize = True
+        lblPayTitle.Font = New Font("Segoe UI Semibold", 11F)
+        lblPayTitle.Location = New Point(40, 12)
+        lblPayTitle.Name = "lblPayTitle"
+        lblPayTitle.Size = New Size(154, 20)
+        lblPayTitle.TabIndex = 28
+        lblPayTitle.Text = "Payment Information"
+        ' 
+        ' lblPayStatusCap
+        ' 
+        lblPayStatusCap.AutoSize = True
+        lblPayStatusCap.Font = New Font("Segoe UI", 9F)
+        lblPayStatusCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblPayStatusCap.Location = New Point(18, 44)
+        lblPayStatusCap.Name = "lblPayStatusCap"
+        lblPayStatusCap.Size = New Size(89, 15)
+        lblPayStatusCap.TabIndex = 29
+        lblPayStatusCap.Text = "Payment Status"
+        ' 
+        ' cboPay
+        ' 
+        cboPay.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        cboPay.DropDownStyle = ComboBoxStyle.DropDownList
+        cboPay.FlatStyle = FlatStyle.Flat
+        cboPay.Font = New Font("Segoe UI", 10.5F)
+        cboPay.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        cboPay.FormattingEnabled = True
+        cboPay.Items.AddRange(New Object() {"Unpaid", "Paid"})
+        cboPay.Location = New Point(18, 66)
+        cboPay.Name = "cboPay"
+        cboPay.Size = New Size(220, 27)
+        cboPay.TabIndex = 30
+        ' 
+        ' lblOrCap
+        ' 
+        lblOrCap.AutoSize = True
+        lblOrCap.Font = New Font("Segoe UI", 9F)
+        lblOrCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblOrCap.Location = New Point(256, 44)
+        lblOrCap.Name = "lblOrCap"
+        lblOrCap.Size = New Size(70, 15)
+        lblOrCap.TabIndex = 31
+        lblOrCap.Text = "OR Number"
+        ' 
+        ' txtOr
+        ' 
+        txtOr.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        txtOr.BorderStyle = BorderStyle.FixedSingle
+        txtOr.Font = New Font("Segoe UI", 10.5F)
+        txtOr.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtOr.Location = New Point(256, 66)
+        txtOr.MaxLength = 30
+        txtOr.Name = "txtOr"
+        txtOr.PlaceholderText = "e.g. OR-100010"
+        txtOr.Size = New Size(220, 26)
+        txtOr.TabIndex = 32
+        ' 
+        ' lblOrDateCap
+        ' 
+        lblOrDateCap.AutoSize = True
+        lblOrDateCap.Font = New Font("Segoe UI", 9F)
+        lblOrDateCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblOrDateCap.Location = New Point(18, 104)
+        lblOrDateCap.Name = "lblOrDateCap"
+        lblOrDateCap.Size = New Size(50, 15)
+        lblOrDateCap.TabIndex = 33
+        lblOrDateCap.Text = "OR Date"
+        ' 
+        ' dtpOr
+        ' 
+        dtpOr.CustomFormat = "MM/dd/yyyy"
+        dtpOr.Font = New Font("Segoe UI", 10.5F)
+        dtpOr.Format = DateTimePickerFormat.Custom
+        dtpOr.Location = New Point(18, 126)
+        dtpOr.Name = "dtpOr"
+        dtpOr.Size = New Size(220, 26)
+        dtpOr.TabIndex = 34
+        ' 
+        ' lblPaidCap
+        ' 
+        lblPaidCap.AutoSize = True
+        lblPaidCap.Font = New Font("Segoe UI", 9F)
+        lblPaidCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblPaidCap.Location = New Point(256, 104)
+        lblPaidCap.Name = "lblPaidCap"
+        lblPaidCap.Size = New Size(95, 15)
+        lblPaidCap.TabIndex = 35
+        lblPaidCap.Text = "Amount Paid (₱)"
+        ' 
+        ' numPaid
+        ' 
+        numPaid.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        numPaid.BorderStyle = BorderStyle.FixedSingle
+        numPaid.DecimalPlaces = 2
+        numPaid.Font = New Font("Segoe UI", 10.5F)
+        numPaid.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        numPaid.Location = New Point(256, 126)
+        numPaid.Maximum = New Decimal(New Integer() {1000000, 0, 0, 0})
+        numPaid.Name = "numPaid"
+        numPaid.Size = New Size(220, 26)
+        numPaid.TabIndex = 36
+        numPaid.TextAlign = HorizontalAlignment.Right
+        numPaid.ThousandsSeparator = True
+        ' 
+        ' lblChange
+        ' 
+        lblChange.AutoSize = True
+        lblChange.Font = New Font("Segoe UI", 9.5F)
+        lblChange.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblChange.Location = New Point(18, 166)
+        lblChange.Name = "lblChange"
+        lblChange.Size = New Size(79, 17)
+        lblChange.TabIndex = 37
+        lblChange.Text = "Amount due"
+        ' 
+        ' btnSavePay
+        ' 
+        btnSavePay.BackColor = Color.FromArgb(CByte(62), CByte(150), CByte(116))
+        btnSavePay.Cursor = Cursors.Hand
+        btnSavePay.FlatAppearance.BorderSize = 0
+        btnSavePay.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(86), CByte(168), CByte(136))
+        btnSavePay.FlatStyle = FlatStyle.Flat
+        btnSavePay.Font = New Font("Segoe UI Semibold", 9.5F)
+        btnSavePay.ForeColor = Color.White
+        btnSavePay.Image = My.Resources.Resources.btn_money
+        btnSavePay.Location = New Point(326, 158)
+        btnSavePay.Name = "btnSavePay"
+        btnSavePay.Size = New Size(150, 34)
+        btnSavePay.TabIndex = 38
+        btnSavePay.Text = " Save Payment"
+        btnSavePay.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnSavePay.UseVisualStyleBackColor = False
+        ' 
+        ' pnlStatus
+        ' 
+        pnlStatus.BackColor = Color.FromArgb(CByte(46), CByte(58), CByte(90))
+        pnlStatus.Controls.Add(lblStatusIcon)
+        pnlStatus.Controls.Add(lblStatusTitle)
+        pnlStatus.Controls.Add(lblCurrentCap)
+        pnlStatus.Controls.Add(txtCurrent)
+        pnlStatus.Controls.Add(lblNextCap)
+        pnlStatus.Controls.Add(cboNext)
+        pnlStatus.Controls.Add(lblStatusHint)
+        pnlStatus.Controls.Add(btnStatus)
+        pnlStatus.Location = New Point(540, 478)
+        pnlStatus.Name = "pnlStatus"
+        pnlStatus.Size = New Size(494, 166)
+        pnlStatus.TabIndex = 39
+        ' 
+        ' lblStatusIcon
+        ' 
+        lblStatusIcon.AutoSize = True
+        lblStatusIcon.Font = New Font("Segoe MDL2 Assets", 12F)
+        lblStatusIcon.ForeColor = Color.FromArgb(CByte(226), CByte(186), CByte(92))
+        lblStatusIcon.Location = New Point(16, 14)
+        lblStatusIcon.Name = "lblStatusIcon"
+        lblStatusIcon.Size = New Size(23, 16)
+        lblStatusIcon.TabIndex = 40
+        lblStatusIcon.Text = ""
+        ' 
+        ' lblStatusTitle
+        ' 
+        lblStatusTitle.AutoSize = True
+        lblStatusTitle.Font = New Font("Segoe UI Semibold", 11F)
+        lblStatusTitle.Location = New Point(40, 12)
+        lblStatusTitle.Name = "lblStatusTitle"
+        lblStatusTitle.Size = New Size(108, 20)
+        lblStatusTitle.TabIndex = 41
+        lblStatusTitle.Text = "Request Status"
+        ' 
+        ' lblCurrentCap
+        ' 
+        lblCurrentCap.AutoSize = True
+        lblCurrentCap.Font = New Font("Segoe UI", 9F)
+        lblCurrentCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblCurrentCap.Location = New Point(18, 44)
+        lblCurrentCap.Name = "lblCurrentCap"
+        lblCurrentCap.Size = New Size(82, 15)
+        lblCurrentCap.TabIndex = 42
+        lblCurrentCap.Text = "Current Status"
+        ' 
+        ' txtCurrent
+        ' 
+        txtCurrent.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtCurrent.BorderStyle = BorderStyle.FixedSingle
+        txtCurrent.Font = New Font("Segoe UI", 10.5F)
+        txtCurrent.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtCurrent.Location = New Point(18, 66)
+        txtCurrent.Name = "txtCurrent"
+        txtCurrent.ReadOnly = True
+        txtCurrent.Size = New Size(220, 26)
+        txtCurrent.TabIndex = 43
+        txtCurrent.TabStop = False
+        ' 
+        ' lblNextCap
+        ' 
+        lblNextCap.AutoSize = True
+        lblNextCap.Font = New Font("Segoe UI", 9F)
+        lblNextCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblNextCap.Location = New Point(256, 44)
+        lblNextCap.Name = "lblNextCap"
+        lblNextCap.Size = New Size(99, 15)
+        lblNextCap.TabIndex = 44
+        lblNextCap.Text = "Change Status To"
+        ' 
+        ' cboNext
+        ' 
+        cboNext.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        cboNext.DropDownStyle = ComboBoxStyle.DropDownList
+        cboNext.FlatStyle = FlatStyle.Flat
+        cboNext.Font = New Font("Segoe UI", 10.5F)
+        cboNext.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        cboNext.FormattingEnabled = True
+        cboNext.Location = New Point(256, 66)
+        cboNext.Name = "cboNext"
+        cboNext.Size = New Size(220, 27)
+        cboNext.TabIndex = 45
+        ' 
+        ' lblStatusHint
+        ' 
+        lblStatusHint.Font = New Font("Segoe UI", 9F)
+        lblStatusHint.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblStatusHint.Location = New Point(18, 104)
+        lblStatusHint.Name = "lblStatusHint"
+        lblStatusHint.Size = New Size(290, 48)
+        lblStatusHint.TabIndex = 46
+        lblStatusHint.Text = "Flow: Pending > Processing > Ready for Release > Released"
+        ' 
+        ' btnStatus
+        ' 
+        btnStatus.BackColor = Color.FromArgb(CByte(62), CByte(104), CByte(186))
+        btnStatus.Cursor = Cursors.Hand
+        btnStatus.FlatAppearance.BorderSize = 0
+        btnStatus.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(82), CByte(124), CByte(204))
+        btnStatus.FlatStyle = FlatStyle.Flat
+        btnStatus.Font = New Font("Segoe UI Semibold", 9.5F)
+        btnStatus.ForeColor = Color.White
+        btnStatus.Image = My.Resources.Resources.btn_sync
+        btnStatus.Location = New Point(326, 110)
+        btnStatus.Name = "btnStatus"
+        btnStatus.Size = New Size(150, 34)
+        btnStatus.TabIndex = 47
+        btnStatus.Text = " Update Status"
+        btnStatus.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnStatus.UseVisualStyleBackColor = False
+        ' 
+        ' btnClose
+        ' 
+        btnClose.BackColor = Color.FromArgb(CByte(78), CByte(92), CByte(128))
+        btnClose.Cursor = Cursors.Hand
+        btnClose.DialogResult = DialogResult.Cancel
+        btnClose.FlatAppearance.BorderSize = 0
+        btnClose.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(96), CByte(110), CByte(146))
+        btnClose.FlatStyle = FlatStyle.Flat
+        btnClose.Font = New Font("Segoe UI Semibold", 9.5F)
+        btnClose.ForeColor = Color.White
+        btnClose.Location = New Point(924, 660)
+        btnClose.Name = "btnClose"
+        btnClose.Size = New Size(110, 36)
+        btnClose.TabIndex = 48
+        btnClose.Text = "Close"
+        btnClose.UseVisualStyleBackColor = False
+        ' 
+        ' RequestDetailsDialog
+        ' 
+        AutoScaleDimensions = New SizeF(96F, 96F)
+        AutoScaleMode = AutoScaleMode.Dpi
+        BackColor = Color.FromArgb(CByte(37), CByte(47), CByte(75))
+        CancelButton = btnClose
+        ClientSize = New Size(1060, 712)
+        Controls.Add(flpHeader)
+        Controls.Add(pnlInfo)
+        Controls.Add(pnlDocs)
+        Controls.Add(pnlPay)
+        Controls.Add(pnlStatus)
+        Controls.Add(btnClose)
+        Font = New Font("Segoe UI", 10F)
+        ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "RequestDetailsDialog"
+        ShowInTaskbar = False
+        StartPosition = FormStartPosition.CenterParent
+        Text = "Request Details"
+        flpHeader.ResumeLayout(False)
+        flpHeader.PerformLayout()
+        pnlInfo.ResumeLayout(False)
+        pnlInfo.PerformLayout()
+        pnlDocs.ResumeLayout(False)
+        pnlDocs.PerformLayout()
+        CType(gridDocs, ComponentModel.ISupportInitialize).EndInit()
+        pnlPay.ResumeLayout(False)
+        pnlPay.PerformLayout()
+        CType(numPaid, ComponentModel.ISupportInitialize).EndInit()
+        pnlStatus.ResumeLayout(False)
+        pnlStatus.PerformLayout()
+        ResumeLayout(False)
 
     End Sub
 

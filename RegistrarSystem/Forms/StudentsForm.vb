@@ -25,11 +25,11 @@ Public Class StudentsForm
         Try
             Dim keep = SelectedId()
             Dim dt = Db.GetTable(
-                "SELECT StudentID AS `Student ID`, LRN, FirstName AS `First Name`, MiddleName AS `Middle Name`, LastName AS `Last Name`, " &
+                "SELECT StudentID AS `Student ID`, FirstName AS `First Name`, MiddleName AS `Middle Name`, LastName AS `Last Name`, " &
                 "       Course, YearLevel AS `Year Level`, Section, " &
                 "       ContactNo AS `Contact No.`, Status " &
                 "  FROM tblstudents " &
-                " WHERE (StudentID LIKE @q OR LRN LIKE @q OR LastName LIKE @q OR FirstName LIKE @q " &
+                " WHERE (StudentID LIKE @q OR LastName LIKE @q OR FirstName LIKE @q " &
                 "        OR CONCAT(FirstName, ' ', LastName) LIKE @q OR CONCAT(LastName, ', ', FirstName) LIKE @q " &
                 "        OR Course LIKE @q) " &
                 "   AND (@st = 'All' OR Status = @st) " &

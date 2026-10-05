@@ -184,5 +184,17 @@ Namespace My.Resources
                 Return CType(obj, System.Drawing.Bitmap)
             End Get
         End Property
+        Friend ReadOnly Property school_building() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("school_building", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
+            End Get
+        End Property
+        Friend ReadOnly Property school_logo() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("school_logo", resourceCulture)
+                Return CType(obj, System.Drawing.Bitmap)
+            End Get
+        End Property
     End Module
 End Namespace

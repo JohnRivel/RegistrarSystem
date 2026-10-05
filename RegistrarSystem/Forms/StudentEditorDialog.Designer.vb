@@ -20,8 +20,6 @@ Partial Class StudentEditorDialog
         Me.lblHeading = New System.Windows.Forms.Label()
         Me.lblIdCap = New System.Windows.Forms.Label()
         Me.txtId = New System.Windows.Forms.TextBox()
-        Me.lblLrnCap = New System.Windows.Forms.Label()
-        Me.txtLrn = New System.Windows.Forms.TextBox()
         Me.lblLastCap = New System.Windows.Forms.Label()
         Me.txtLast = New System.Windows.Forms.TextBox()
         Me.lblFirstCap = New System.Windows.Forms.Label()
@@ -35,7 +33,7 @@ Partial Class StudentEditorDialog
         Me.lblYearCap = New System.Windows.Forms.Label()
         Me.cboYear = New System.Windows.Forms.ComboBox()
         Me.lblSectionCap = New System.Windows.Forms.Label()
-        Me.txtSection = New System.Windows.Forms.TextBox()
+        Me.cboSection = New System.Windows.Forms.ComboBox()
         Me.lblStatusCap = New System.Windows.Forms.Label()
         Me.cboStatus = New System.Windows.Forms.ComboBox()
         Me.btnCancel = New System.Windows.Forms.Button()
@@ -50,52 +48,34 @@ Partial Class StudentEditorDialog
         Me.lblHeading.Text = "Add Student"
         Me.lblIdCap.AutoSize = True
         Me.lblIdCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblIdCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblIdCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblIdCap.Location = New System.Drawing.Point(22, 62)
         Me.lblIdCap.Size = New System.Drawing.Size(40, 19)
         Me.lblIdCap.Name = "lblIdCap"
         Me.lblIdCap.TabIndex = 1
         Me.lblIdCap.Text = "Student ID *"
-        Me.txtId.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.txtId.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtId.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtId.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.txtId.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.txtId.Location = New System.Drawing.Point(22, 84)
         Me.txtId.MaxLength = 8
         Me.txtId.PlaceholderText = "e.g. 20260001"
         Me.txtId.Size = New System.Drawing.Size(288, 26)
         Me.txtId.Name = "txtId"
         Me.txtId.TabIndex = 2
-        Me.lblLrnCap.AutoSize = True
-        Me.lblLrnCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblLrnCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblLrnCap.Location = New System.Drawing.Point(330, 62)
-        Me.lblLrnCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblLrnCap.Name = "lblLrnCap"
-        Me.lblLrnCap.TabIndex = 3
-        Me.lblLrnCap.Text = "LRN *"
-        Me.txtLrn.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.txtLrn.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtLrn.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtLrn.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtLrn.Location = New System.Drawing.Point(330, 84)
-        Me.txtLrn.MaxLength = 12
-        Me.txtLrn.PlaceholderText = "12-digit LRN"
-        Me.txtLrn.Size = New System.Drawing.Size(288, 26)
-        Me.txtLrn.Name = "txtLrn"
-        Me.txtLrn.TabIndex = 4
         Me.lblLastCap.AutoSize = True
         Me.lblLastCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblLastCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblLastCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblLastCap.Location = New System.Drawing.Point(22, 122)
         Me.lblLastCap.Size = New System.Drawing.Size(40, 19)
         Me.lblLastCap.Name = "lblLastCap"
         Me.lblLastCap.TabIndex = 5
         Me.lblLastCap.Text = "Last Name *"
-        Me.txtLast.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.txtLast.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.txtLast.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLast.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtLast.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.txtLast.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.txtLast.Location = New System.Drawing.Point(22, 144)
         Me.txtLast.MaxLength = 50
         Me.txtLast.Size = New System.Drawing.Size(288, 26)
@@ -103,16 +83,16 @@ Partial Class StudentEditorDialog
         Me.txtLast.TabIndex = 6
         Me.lblFirstCap.AutoSize = True
         Me.lblFirstCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblFirstCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblFirstCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblFirstCap.Location = New System.Drawing.Point(330, 122)
         Me.lblFirstCap.Size = New System.Drawing.Size(40, 19)
         Me.lblFirstCap.Name = "lblFirstCap"
         Me.lblFirstCap.TabIndex = 7
         Me.lblFirstCap.Text = "First Name *"
-        Me.txtFirst.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.txtFirst.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.txtFirst.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFirst.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtFirst.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.txtFirst.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.txtFirst.Location = New System.Drawing.Point(330, 144)
         Me.txtFirst.MaxLength = 50
         Me.txtFirst.Size = New System.Drawing.Size(288, 26)
@@ -120,16 +100,16 @@ Partial Class StudentEditorDialog
         Me.txtFirst.TabIndex = 8
         Me.lblMiddleCap.AutoSize = True
         Me.lblMiddleCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblMiddleCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblMiddleCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblMiddleCap.Location = New System.Drawing.Point(22, 182)
         Me.lblMiddleCap.Size = New System.Drawing.Size(40, 19)
         Me.lblMiddleCap.Name = "lblMiddleCap"
         Me.lblMiddleCap.TabIndex = 9
         Me.lblMiddleCap.Text = "Middle Name"
-        Me.txtMiddle.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.txtMiddle.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.txtMiddle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtMiddle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtMiddle.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.txtMiddle.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.txtMiddle.Location = New System.Drawing.Point(22, 204)
         Me.txtMiddle.MaxLength = 50
         Me.txtMiddle.PlaceholderText = "optional"
@@ -138,16 +118,16 @@ Partial Class StudentEditorDialog
         Me.txtMiddle.TabIndex = 10
         Me.lblContactCap.AutoSize = True
         Me.lblContactCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblContactCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblContactCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblContactCap.Location = New System.Drawing.Point(330, 182)
         Me.lblContactCap.Size = New System.Drawing.Size(40, 19)
         Me.lblContactCap.Name = "lblContactCap"
         Me.lblContactCap.TabIndex = 11
         Me.lblContactCap.Text = "Contact Number *"
-        Me.txtContact.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.txtContact.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.txtContact.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtContact.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtContact.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.txtContact.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.txtContact.Location = New System.Drawing.Point(330, 204)
         Me.txtContact.MaxLength = 11
         Me.txtContact.PlaceholderText = "09XXXXXXXXX"
@@ -156,19 +136,19 @@ Partial Class StudentEditorDialog
         Me.txtContact.TabIndex = 12
         Me.lblCourseCap.AutoSize = True
         Me.lblCourseCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblCourseCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblCourseCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblCourseCap.Location = New System.Drawing.Point(22, 242)
         Me.lblCourseCap.Size = New System.Drawing.Size(40, 19)
         Me.lblCourseCap.Name = "lblCourseCap"
         Me.lblCourseCap.TabIndex = 13
         Me.lblCourseCap.Text = "Course *"
-        Me.cboCourse.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.cboCourse.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.cboCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown
         Me.cboCourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboCourse.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboCourse.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.cboCourse.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.cboCourse.FormattingEnabled = True
-        Me.cboCourse.Items.AddRange(New Object() {"BSIT", "BSCS", "BSBA", "BSED", "BSN", "BSCrim", "BSHM"})
+        Me.cboCourse.Items.AddRange(New Object() {"BSIT", "BSCS", "BSCPE", "BSIE", "BSA", "BSBA", "BSCA", "BSREM", "BSCRIM", "BSPSY", "BEED", "BSED", "BTVTED", "BSTM", "BSHM", "JD"})
         Me.cboCourse.Location = New System.Drawing.Point(22, 264)
         Me.cboCourse.MaxLength = 50
         Me.cboCourse.Size = New System.Drawing.Size(288, 27)
@@ -176,17 +156,17 @@ Partial Class StudentEditorDialog
         Me.cboCourse.TabIndex = 14
         Me.lblYearCap.AutoSize = True
         Me.lblYearCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblYearCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblYearCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblYearCap.Location = New System.Drawing.Point(330, 242)
         Me.lblYearCap.Size = New System.Drawing.Size(40, 19)
         Me.lblYearCap.Name = "lblYearCap"
         Me.lblYearCap.TabIndex = 15
         Me.lblYearCap.Text = "Year Level *"
-        Me.cboYear.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.cboYear.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.cboYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboYear.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboYear.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.cboYear.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.cboYear.FormattingEnabled = True
         Me.cboYear.Items.AddRange(New Object() {"1st Year", "2nd Year", "3rd Year", "4th Year", "5th Year"})
         Me.cboYear.Location = New System.Drawing.Point(330, 264)
@@ -195,46 +175,46 @@ Partial Class StudentEditorDialog
         Me.cboYear.TabIndex = 16
         Me.lblSectionCap.AutoSize = True
         Me.lblSectionCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblSectionCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblSectionCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblSectionCap.Location = New System.Drawing.Point(22, 302)
         Me.lblSectionCap.Size = New System.Drawing.Size(40, 19)
         Me.lblSectionCap.Name = "lblSectionCap"
         Me.lblSectionCap.TabIndex = 17
         Me.lblSectionCap.Text = "Section *"
-        Me.txtSection.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.txtSection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtSection.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtSection.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtSection.Location = New System.Drawing.Point(22, 324)
-        Me.txtSection.MaxLength = 20
-        Me.txtSection.PlaceholderText = "e.g. A"
-        Me.txtSection.Size = New System.Drawing.Size(288, 26)
-        Me.txtSection.Name = "txtSection"
-        Me.txtSection.TabIndex = 18
+        Me.cboSection.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
+        Me.cboSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cboSection.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.cboSection.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        Me.cboSection.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
+        Me.cboSection.FormattingEnabled = True
+        Me.cboSection.Location = New System.Drawing.Point(22, 324)
+        Me.cboSection.Size = New System.Drawing.Size(288, 27)
+        Me.cboSection.Name = "cboSection"
+        Me.cboSection.TabIndex = 18
         Me.lblStatusCap.AutoSize = True
         Me.lblStatusCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblStatusCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblStatusCap.Location = New System.Drawing.Point(330, 302)
+        Me.lblStatusCap.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
+        Me.lblStatusCap.Location = New System.Drawing.Point(330, 62)
         Me.lblStatusCap.Size = New System.Drawing.Size(40, 19)
         Me.lblStatusCap.Name = "lblStatusCap"
-        Me.lblStatusCap.TabIndex = 19
+        Me.lblStatusCap.TabIndex = 3
         Me.lblStatusCap.Text = "Status"
-        Me.cboStatus.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.cboStatus.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboStatus.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboStatus.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.cboStatus.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.cboStatus.FormattingEnabled = True
         Me.cboStatus.Items.AddRange(New Object() {"Active", "Inactive"})
-        Me.cboStatus.Location = New System.Drawing.Point(330, 324)
+        Me.cboStatus.Location = New System.Drawing.Point(330, 84)
         Me.cboStatus.Size = New System.Drawing.Size(288, 27)
         Me.cboStatus.Name = "cboStatus"
-        Me.cboStatus.TabIndex = 20
-        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(92, 98, 120)
+        Me.cboStatus.TabIndex = 4
+        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(78, 92, 128)
         Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnCancel.FlatAppearance.BorderSize = 0
-        Me.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(125, 129, 147)
+        Me.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(96, 110, 146)
         Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnCancel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.btnCancel.ForeColor = System.Drawing.Color.White
@@ -244,10 +224,10 @@ Partial Class StudentEditorDialog
         Me.btnCancel.TabIndex = 21
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = False
-        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(38, 170, 118)
+        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(62, 150, 116)
         Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSave.FlatAppearance.BorderSize = 0
-        Me.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(81, 187, 145)
+        Me.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(86, 168, 136)
         Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSave.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.btnSave.ForeColor = System.Drawing.Color.White
@@ -262,14 +242,12 @@ Partial Class StudentEditorDialog
         Me.AcceptButton = Me.btnSave
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.FromArgb(41, 44, 58)
+        Me.BackColor = System.Drawing.Color.FromArgb(37, 47, 75)
         Me.CancelButton = Me.btnCancel
         Me.ClientSize = New System.Drawing.Size(640, 440)
         Me.Controls.Add(Me.lblHeading)
         Me.Controls.Add(Me.lblIdCap)
         Me.Controls.Add(Me.txtId)
-        Me.Controls.Add(Me.lblLrnCap)
-        Me.Controls.Add(Me.txtLrn)
         Me.Controls.Add(Me.lblLastCap)
         Me.Controls.Add(Me.txtLast)
         Me.Controls.Add(Me.lblFirstCap)
@@ -283,13 +261,13 @@ Partial Class StudentEditorDialog
         Me.Controls.Add(Me.lblYearCap)
         Me.Controls.Add(Me.cboYear)
         Me.Controls.Add(Me.lblSectionCap)
-        Me.Controls.Add(Me.txtSection)
+        Me.Controls.Add(Me.cboSection)
         Me.Controls.Add(Me.lblStatusCap)
         Me.Controls.Add(Me.cboStatus)
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnSave)
         Me.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -305,8 +283,6 @@ Partial Class StudentEditorDialog
     Friend WithEvents lblHeading As System.Windows.Forms.Label
     Friend WithEvents lblIdCap As System.Windows.Forms.Label
     Friend WithEvents txtId As System.Windows.Forms.TextBox
-    Friend WithEvents lblLrnCap As System.Windows.Forms.Label
-    Friend WithEvents txtLrn As System.Windows.Forms.TextBox
     Friend WithEvents lblLastCap As System.Windows.Forms.Label
     Friend WithEvents txtLast As System.Windows.Forms.TextBox
     Friend WithEvents lblFirstCap As System.Windows.Forms.Label
@@ -320,7 +296,7 @@ Partial Class StudentEditorDialog
     Friend WithEvents lblYearCap As System.Windows.Forms.Label
     Friend WithEvents cboYear As System.Windows.Forms.ComboBox
     Friend WithEvents lblSectionCap As System.Windows.Forms.Label
-    Friend WithEvents txtSection As System.Windows.Forms.TextBox
+    Friend WithEvents cboSection As System.Windows.Forms.ComboBox
     Friend WithEvents lblStatusCap As System.Windows.Forms.Label
     Friend WithEvents cboStatus As System.Windows.Forms.ComboBox
     Friend WithEvents btnCancel As System.Windows.Forms.Button

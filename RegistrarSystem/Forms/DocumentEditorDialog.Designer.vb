@@ -17,182 +17,224 @@ Partial Class DocumentEditorDialog
 
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.lblHeading = New System.Windows.Forms.Label()
-        Me.lblIdCap = New System.Windows.Forms.Label()
-        Me.txtId = New System.Windows.Forms.TextBox()
-        Me.lblStatusCap = New System.Windows.Forms.Label()
-        Me.cboStatus = New System.Windows.Forms.ComboBox()
-        Me.lblNameCap = New System.Windows.Forms.Label()
-        Me.txtName = New System.Windows.Forms.TextBox()
-        Me.lblDescCap = New System.Windows.Forms.Label()
-        Me.txtDesc = New System.Windows.Forms.TextBox()
-        Me.lblFeeCap = New System.Windows.Forms.Label()
-        Me.numFee = New System.Windows.Forms.NumericUpDown()
-        Me.btnCancel = New System.Windows.Forms.Button()
-        Me.btnSave = New System.Windows.Forms.Button()
-        CType(Me.numFee, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
-        Me.lblHeading.AutoSize = True
-        Me.lblHeading.Font = New System.Drawing.Font("Segoe UI Semibold", 15.0!)
-        Me.lblHeading.Location = New System.Drawing.Point(22, 18)
-        Me.lblHeading.Size = New System.Drawing.Size(40, 19)
-        Me.lblHeading.Name = "lblHeading"
-        Me.lblHeading.TabIndex = 0
-        Me.lblHeading.Text = "Add Document"
-        Me.lblIdCap.AutoSize = True
-        Me.lblIdCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblIdCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblIdCap.Location = New System.Drawing.Point(22, 62)
-        Me.lblIdCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblIdCap.Name = "lblIdCap"
-        Me.lblIdCap.TabIndex = 1
-        Me.lblIdCap.Text = "Document ID"
-        Me.txtId.BackColor = System.Drawing.Color.FromArgb(46, 49, 64)
-        Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtId.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtId.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtId.Location = New System.Drawing.Point(22, 84)
-        Me.txtId.ReadOnly = True
-        Me.txtId.Size = New System.Drawing.Size(248, 26)
-        Me.txtId.Name = "txtId"
-        Me.txtId.TabIndex = 2
-        Me.txtId.TabStop = False
-        Me.txtId.Text = "(auto)"
-        Me.lblStatusCap.AutoSize = True
-        Me.lblStatusCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblStatusCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblStatusCap.Location = New System.Drawing.Point(290, 62)
-        Me.lblStatusCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblStatusCap.Name = "lblStatusCap"
-        Me.lblStatusCap.TabIndex = 3
-        Me.lblStatusCap.Text = "Status"
-        Me.cboStatus.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cboStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.cboStatus.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboStatus.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.cboStatus.FormattingEnabled = True
-        Me.cboStatus.Items.AddRange(New Object() {"Active", "Inactive"})
-        Me.cboStatus.Location = New System.Drawing.Point(290, 84)
-        Me.cboStatus.Size = New System.Drawing.Size(248, 27)
-        Me.cboStatus.Name = "cboStatus"
-        Me.cboStatus.TabIndex = 4
-        Me.lblNameCap.AutoSize = True
-        Me.lblNameCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblNameCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblNameCap.Location = New System.Drawing.Point(22, 122)
-        Me.lblNameCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblNameCap.Name = "lblNameCap"
-        Me.lblNameCap.TabIndex = 5
-        Me.lblNameCap.Text = "Document Name *"
-        Me.txtName.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.txtName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtName.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtName.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtName.Location = New System.Drawing.Point(22, 144)
-        Me.txtName.MaxLength = 100
-        Me.txtName.PlaceholderText = "e.g. Transcript of Records"
-        Me.txtName.Size = New System.Drawing.Size(516, 26)
-        Me.txtName.Name = "txtName"
-        Me.txtName.TabIndex = 6
-        Me.lblDescCap.AutoSize = True
-        Me.lblDescCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblDescCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblDescCap.Location = New System.Drawing.Point(22, 182)
-        Me.lblDescCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblDescCap.Name = "lblDescCap"
-        Me.lblDescCap.TabIndex = 7
-        Me.lblDescCap.Text = "Description"
-        Me.txtDesc.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.txtDesc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDesc.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtDesc.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.txtDesc.Location = New System.Drawing.Point(22, 204)
-        Me.txtDesc.MaxLength = 255
-        Me.txtDesc.Multiline = True
-        Me.txtDesc.PlaceholderText = "Short description"
-        Me.txtDesc.Size = New System.Drawing.Size(516, 60)
-        Me.txtDesc.Name = "txtDesc"
-        Me.txtDesc.TabIndex = 8
-        Me.lblFeeCap.AutoSize = True
-        Me.lblFeeCap.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.lblFeeCap.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
-        Me.lblFeeCap.Location = New System.Drawing.Point(22, 276)
-        Me.lblFeeCap.Size = New System.Drawing.Size(40, 19)
-        Me.lblFeeCap.Name = "lblFeeCap"
-        Me.lblFeeCap.TabIndex = 9
-        Me.lblFeeCap.Text = "Fee (₱) *"
-        Me.numFee.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
-        Me.numFee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.numFee.DecimalPlaces = 2
-        Me.numFee.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.numFee.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.numFee.Location = New System.Drawing.Point(22, 298)
-        Me.numFee.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
-        Me.numFee.Size = New System.Drawing.Size(248, 26)
-        Me.numFee.Name = "numFee"
-        Me.numFee.TabIndex = 10
-        Me.numFee.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.numFee.ThousandsSeparator = True
-        Me.btnCancel.BackColor = System.Drawing.Color.FromArgb(92, 98, 120)
-        Me.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnCancel.FlatAppearance.BorderSize = 0
-        Me.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(125, 129, 147)
-        Me.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnCancel.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.btnCancel.ForeColor = System.Drawing.Color.White
-        Me.btnCancel.Location = New System.Drawing.Point(310, 358)
-        Me.btnCancel.Size = New System.Drawing.Size(110, 36)
-        Me.btnCancel.Name = "btnCancel"
-        Me.btnCancel.TabIndex = 11
-        Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = False
-        Me.btnSave.BackColor = System.Drawing.Color.FromArgb(38, 170, 118)
-        Me.btnSave.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnSave.FlatAppearance.BorderSize = 0
-        Me.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(81, 187, 145)
-        Me.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSave.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        Me.btnSave.ForeColor = System.Drawing.Color.White
-        Me.btnSave.Image = Global.RegistrarSystem.My.Resources.Resources.btn_save
-        Me.btnSave.Location = New System.Drawing.Point(428, 358)
-        Me.btnSave.Size = New System.Drawing.Size(110, 36)
-        Me.btnSave.Name = "btnSave"
-        Me.btnSave.TabIndex = 12
-        Me.btnSave.Text = " Save"
-        Me.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btnSave.UseVisualStyleBackColor = False
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.FromArgb(41, 44, 58)
-        Me.CancelButton = Me.btnCancel
-        Me.ClientSize = New System.Drawing.Size(560, 412)
-        Me.Controls.Add(Me.lblHeading)
-        Me.Controls.Add(Me.lblIdCap)
-        Me.Controls.Add(Me.txtId)
-        Me.Controls.Add(Me.lblStatusCap)
-        Me.Controls.Add(Me.cboStatus)
-        Me.Controls.Add(Me.lblNameCap)
-        Me.Controls.Add(Me.txtName)
-        Me.Controls.Add(Me.lblDescCap)
-        Me.Controls.Add(Me.txtDesc)
-        Me.Controls.Add(Me.lblFeeCap)
-        Me.Controls.Add(Me.numFee)
-        Me.Controls.Add(Me.btnCancel)
-        Me.Controls.Add(Me.btnSave)
-        Me.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
-        Me.Name = "DocumentEditorDialog"
-        Me.ShowInTaskbar = False
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
-        Me.Text = "Add Document"
-        CType(Me.numFee, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        lblHeading = New Label()
+        lblIdCap = New Label()
+        txtId = New TextBox()
+        lblStatusCap = New Label()
+        cboStatus = New ComboBox()
+        lblNameCap = New Label()
+        txtName = New TextBox()
+        lblDescCap = New Label()
+        txtDesc = New TextBox()
+        lblFeeCap = New Label()
+        numFee = New NumericUpDown()
+        btnCancel = New Button()
+        btnSave = New Button()
+        CType(numFee, ComponentModel.ISupportInitialize).BeginInit()
+        SuspendLayout()
+        ' 
+        ' lblHeading
+        ' 
+        lblHeading.AutoSize = True
+        lblHeading.Font = New Font("Segoe UI Semibold", 15F)
+        lblHeading.Location = New Point(22, 18)
+        lblHeading.Name = "lblHeading"
+        lblHeading.Size = New Size(150, 28)
+        lblHeading.TabIndex = 0
+        lblHeading.Text = "Add Document"
+        ' 
+        ' lblIdCap
+        ' 
+        lblIdCap.AutoSize = True
+        lblIdCap.Font = New Font("Segoe UI", 9F)
+        lblIdCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblIdCap.Location = New Point(22, 62)
+        lblIdCap.Name = "lblIdCap"
+        lblIdCap.Size = New Size(77, 15)
+        lblIdCap.TabIndex = 1
+        lblIdCap.Text = "Document ID"
+        ' 
+        ' txtId
+        ' 
+        txtId.BackColor = Color.FromArgb(CByte(42), CByte(53), CByte(83))
+        txtId.BorderStyle = BorderStyle.FixedSingle
+        txtId.Font = New Font("Segoe UI", 10.5F)
+        txtId.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtId.Location = New Point(22, 84)
+        txtId.Name = "txtId"
+        txtId.ReadOnly = True
+        txtId.Size = New Size(248, 26)
+        txtId.TabIndex = 2
+        txtId.TabStop = False
+        txtId.Text = "(auto)"
+        ' 
+        ' lblStatusCap
+        ' 
+        lblStatusCap.AutoSize = True
+        lblStatusCap.Font = New Font("Segoe UI", 9F)
+        lblStatusCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblStatusCap.Location = New Point(290, 62)
+        lblStatusCap.Name = "lblStatusCap"
+        lblStatusCap.Size = New Size(39, 15)
+        lblStatusCap.TabIndex = 3
+        lblStatusCap.Text = "Status"
+        ' 
+        ' cboStatus
+        ' 
+        cboStatus.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        cboStatus.DropDownStyle = ComboBoxStyle.DropDownList
+        cboStatus.FlatStyle = FlatStyle.Flat
+        cboStatus.Font = New Font("Segoe UI", 10.5F)
+        cboStatus.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        cboStatus.FormattingEnabled = True
+        cboStatus.Items.AddRange(New Object() {"Active", "Inactive"})
+        cboStatus.Location = New Point(290, 84)
+        cboStatus.Name = "cboStatus"
+        cboStatus.Size = New Size(248, 27)
+        cboStatus.TabIndex = 4
+        ' 
+        ' lblNameCap
+        ' 
+        lblNameCap.AutoSize = True
+        lblNameCap.Font = New Font("Segoe UI", 9F)
+        lblNameCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblNameCap.Location = New Point(22, 122)
+        lblNameCap.Name = "lblNameCap"
+        lblNameCap.Size = New Size(106, 15)
+        lblNameCap.TabIndex = 5
+        lblNameCap.Text = "Document Name *"
+        ' 
+        ' txtName
+        ' 
+        txtName.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        txtName.BorderStyle = BorderStyle.FixedSingle
+        txtName.Font = New Font("Segoe UI", 10.5F)
+        txtName.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtName.Location = New Point(22, 144)
+        txtName.MaxLength = 100
+        txtName.Name = "txtName"
+        txtName.PlaceholderText = "e.g. Transcript of Records"
+        txtName.Size = New Size(516, 26)
+        txtName.TabIndex = 6
+        ' 
+        ' lblDescCap
+        ' 
+        lblDescCap.AutoSize = True
+        lblDescCap.Font = New Font("Segoe UI", 9F)
+        lblDescCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblDescCap.Location = New Point(22, 182)
+        lblDescCap.Name = "lblDescCap"
+        lblDescCap.Size = New Size(67, 15)
+        lblDescCap.TabIndex = 7
+        lblDescCap.Text = "Description"
+        ' 
+        ' txtDesc
+        ' 
+        txtDesc.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        txtDesc.BorderStyle = BorderStyle.FixedSingle
+        txtDesc.Font = New Font("Segoe UI", 10.5F)
+        txtDesc.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        txtDesc.Location = New Point(22, 204)
+        txtDesc.MaxLength = 255
+        txtDesc.Multiline = True
+        txtDesc.Name = "txtDesc"
+        txtDesc.PlaceholderText = "Short description"
+        txtDesc.Size = New Size(516, 60)
+        txtDesc.TabIndex = 8
+        ' 
+        ' lblFeeCap
+        ' 
+        lblFeeCap.AutoSize = True
+        lblFeeCap.Font = New Font("Segoe UI", 9F)
+        lblFeeCap.ForeColor = Color.FromArgb(CByte(156), CByte(168), CByte(196))
+        lblFeeCap.Location = New Point(22, 276)
+        lblFeeCap.Name = "lblFeeCap"
+        lblFeeCap.Size = New Size(51, 15)
+        lblFeeCap.TabIndex = 9
+        lblFeeCap.Text = "Fee (₱) *"
+        ' 
+        ' numFee
+        ' 
+        numFee.BackColor = Color.FromArgb(CByte(58), CByte(72), CByte(108))
+        numFee.BorderStyle = BorderStyle.FixedSingle
+        numFee.DecimalPlaces = 2
+        numFee.Font = New Font("Segoe UI", 10.5F)
+        numFee.ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        numFee.Location = New Point(22, 298)
+        numFee.Maximum = New Decimal(New Integer() {100000, 0, 0, 0})
+        numFee.Name = "numFee"
+        numFee.Size = New Size(248, 26)
+        numFee.TabIndex = 10
+        numFee.TextAlign = HorizontalAlignment.Right
+        numFee.ThousandsSeparator = True
+        ' 
+        ' btnCancel
+        ' 
+        btnCancel.BackColor = Color.FromArgb(CByte(78), CByte(92), CByte(128))
+        btnCancel.Cursor = Cursors.Hand
+        btnCancel.DialogResult = DialogResult.Cancel
+        btnCancel.FlatAppearance.BorderSize = 0
+        btnCancel.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(96), CByte(110), CByte(146))
+        btnCancel.FlatStyle = FlatStyle.Flat
+        btnCancel.Font = New Font("Segoe UI Semibold", 9.5F)
+        btnCancel.ForeColor = Color.White
+        btnCancel.Location = New Point(310, 358)
+        btnCancel.Name = "btnCancel"
+        btnCancel.Size = New Size(110, 36)
+        btnCancel.TabIndex = 11
+        btnCancel.Text = "Cancel"
+        btnCancel.UseVisualStyleBackColor = False
+        ' 
+        ' btnSave
+        ' 
+        btnSave.BackColor = Color.FromArgb(CByte(62), CByte(150), CByte(116))
+        btnSave.Cursor = Cursors.Hand
+        btnSave.FlatAppearance.BorderSize = 0
+        btnSave.FlatAppearance.MouseOverBackColor = Color.FromArgb(CByte(86), CByte(168), CByte(136))
+        btnSave.FlatStyle = FlatStyle.Flat
+        btnSave.Font = New Font("Segoe UI Semibold", 9.5F)
+        btnSave.ForeColor = Color.White
+        btnSave.Image = My.Resources.Resources.btn_save
+        btnSave.Location = New Point(428, 358)
+        btnSave.Name = "btnSave"
+        btnSave.Size = New Size(110, 36)
+        btnSave.TabIndex = 12
+        btnSave.Text = " Save"
+        btnSave.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnSave.UseVisualStyleBackColor = False
+        ' 
+        ' DocumentEditorDialog
+        ' 
+        AutoScaleDimensions = New SizeF(96F, 96F)
+        AutoScaleMode = AutoScaleMode.Dpi
+        BackColor = Color.FromArgb(CByte(37), CByte(47), CByte(75))
+        CancelButton = btnCancel
+        ClientSize = New Size(560, 412)
+        Controls.Add(lblHeading)
+        Controls.Add(lblIdCap)
+        Controls.Add(txtId)
+        Controls.Add(lblStatusCap)
+        Controls.Add(cboStatus)
+        Controls.Add(lblNameCap)
+        Controls.Add(txtName)
+        Controls.Add(lblDescCap)
+        Controls.Add(txtDesc)
+        Controls.Add(lblFeeCap)
+        Controls.Add(numFee)
+        Controls.Add(btnCancel)
+        Controls.Add(btnSave)
+        Font = New Font("Segoe UI", 10F)
+        ForeColor = Color.FromArgb(CByte(220), CByte(225), CByte(236))
+        FormBorderStyle = FormBorderStyle.None
+        MaximizeBox = False
+        MinimizeBox = False
+        Name = "DocumentEditorDialog"
+        ShowInTaskbar = False
+        StartPosition = FormStartPosition.CenterParent
+        Text = "Add Document"
+        CType(numFee, ComponentModel.ISupportInitialize).EndInit()
+        ResumeLayout(False)
+        PerformLayout()
 
     End Sub
 

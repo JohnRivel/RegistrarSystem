@@ -42,7 +42,7 @@ Partial Class RequestListForm
         Me.SuspendLayout()
         Me.lblIcon.AutoSize = True
         Me.lblIcon.Font = New System.Drawing.Font("Segoe MDL2 Assets", 22.0!)
-        Me.lblIcon.ForeColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        Me.lblIcon.ForeColor = System.Drawing.Color.FromArgb(226, 186, 92)
         Me.lblIcon.Location = New System.Drawing.Point(26, 22)
         Me.lblIcon.Size = New System.Drawing.Size(40, 19)
         Me.lblIcon.Name = "lblIcon"
@@ -57,37 +57,37 @@ Partial Class RequestListForm
         Me.lblTitle.Text = "Document Requests"
         Me.lblSubtitle.AutoSize = True
         Me.lblSubtitle.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblSubtitle.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblSubtitle.Location = New System.Drawing.Point(72, 56)
         Me.lblSubtitle.Size = New System.Drawing.Size(40, 19)
         Me.lblSubtitle.Name = "lblSubtitle"
         Me.lblSubtitle.TabIndex = 2
         Me.lblSubtitle.Text = "Double-click a request to view details, record payment or update its status"
-        Me.txtSearch.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.txtSearch.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtSearch.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.txtSearch.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.txtSearch.Location = New System.Drawing.Point(28, 100)
         Me.txtSearch.PlaceholderText = "Search Request No., Student ID, name or OR No..."
         Me.txtSearch.Size = New System.Drawing.Size(300, 26)
         Me.txtSearch.Name = "txtSearch"
         Me.txtSearch.TabIndex = 3
-        Me.cboStatus.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.cboStatus.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.cboStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboStatus.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboStatus.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.cboStatus.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.cboStatus.FormattingEnabled = True
         Me.cboStatus.Items.AddRange(New Object() {"All Status", "Pending", "Processing", "Ready for Release", "Released", "Cancelled"})
         Me.cboStatus.Location = New System.Drawing.Point(336, 99)
         Me.cboStatus.Size = New System.Drawing.Size(160, 27)
         Me.cboStatus.Name = "cboStatus"
         Me.cboStatus.TabIndex = 4
-        Me.cboPay.BackColor = System.Drawing.Color.FromArgb(66, 70, 91)
+        Me.cboPay.BackColor = System.Drawing.Color.FromArgb(58, 72, 108)
         Me.cboPay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cboPay.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        Me.cboPay.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.cboPay.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.cboPay.FormattingEnabled = True
         Me.cboPay.Items.AddRange(New Object() {"All Payments", "Unpaid", "Paid"})
         Me.cboPay.Location = New System.Drawing.Point(504, 99)
@@ -96,7 +96,7 @@ Partial Class RequestListForm
         Me.cboPay.TabIndex = 5
         Me.chkDate.AutoSize = True
         Me.chkDate.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.chkDate.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.chkDate.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.chkDate.Location = New System.Drawing.Point(644, 101)
         Me.chkDate.Size = New System.Drawing.Size(60, 23)
         Me.chkDate.Name = "chkDate"
@@ -112,7 +112,7 @@ Partial Class RequestListForm
         Me.dtpFrom.TabIndex = 7
         Me.lblTo.AutoSize = True
         Me.lblTo.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        Me.lblTo.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblTo.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblTo.Location = New System.Drawing.Point(840, 103)
         Me.lblTo.Size = New System.Drawing.Size(40, 19)
         Me.lblTo.Name = "lblTo"
@@ -125,10 +125,10 @@ Partial Class RequestListForm
         Me.dtpTo.Size = New System.Drawing.Size(125, 26)
         Me.dtpTo.Name = "dtpTo"
         Me.dtpTo.TabIndex = 9
-        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(62, 104, 186)
         Me.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnSearch.FlatAppearance.BorderSize = 0
-        Me.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(110, 151, 255)
+        Me.btnSearch.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(82, 124, 204)
         Me.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSearch.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.btnSearch.ForeColor = System.Drawing.Color.White
@@ -140,10 +140,10 @@ Partial Class RequestListForm
         Me.btnSearch.Text = " Search"
         Me.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnSearch.UseVisualStyleBackColor = False
-        Me.btnOpen.BackColor = System.Drawing.Color.FromArgb(38, 170, 118)
+        Me.btnOpen.BackColor = System.Drawing.Color.FromArgb(62, 150, 116)
         Me.btnOpen.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnOpen.FlatAppearance.BorderSize = 0
-        Me.btnOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(81, 187, 145)
+        Me.btnOpen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(86, 168, 136)
         Me.btnOpen.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnOpen.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.btnOpen.ForeColor = System.Drawing.Color.White
@@ -155,10 +155,10 @@ Partial Class RequestListForm
         Me.btnOpen.Text = " View / Update"
         Me.btnOpen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnOpen.UseVisualStyleBackColor = False
-        Me.btnNew.BackColor = System.Drawing.Color.FromArgb(92, 98, 120)
+        Me.btnNew.BackColor = System.Drawing.Color.FromArgb(78, 92, 128)
         Me.btnNew.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnNew.FlatAppearance.BorderSize = 0
-        Me.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(125, 129, 147)
+        Me.btnNew.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(96, 110, 146)
         Me.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnNew.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.btnNew.ForeColor = System.Drawing.Color.White
@@ -170,10 +170,10 @@ Partial Class RequestListForm
         Me.btnNew.Text = " New Request"
         Me.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnNew.UseVisualStyleBackColor = False
-        Me.btnRefresh.BackColor = System.Drawing.Color.FromArgb(92, 98, 120)
+        Me.btnRefresh.BackColor = System.Drawing.Color.FromArgb(78, 92, 128)
         Me.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnRefresh.FlatAppearance.BorderSize = 0
-        Me.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(125, 129, 147)
+        Me.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(96, 110, 146)
         Me.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnRefresh.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
         Me.btnRefresh.ForeColor = System.Drawing.Color.White
@@ -188,36 +188,36 @@ Partial Class RequestListForm
         Me.grid.AllowUserToAddRows = False
         Me.grid.AllowUserToDeleteRows = False
         Me.grid.AllowUserToResizeRows = False
-        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(57, 61, 80)
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(51, 64, 98)
         Me.grid.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.grid.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.grid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.grid.BackgroundColor = System.Drawing.Color.FromArgb(51, 55, 72)
+        Me.grid.BackgroundColor = System.Drawing.Color.FromArgb(46, 58, 90)
         Me.grid.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.grid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.grid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(31, 33, 45)
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(30, 39, 64)
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI Semibold", 9.5!)
-        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         DataGridViewCellStyle2.Padding = New System.Windows.Forms.Padding(6, 0, 0, 0)
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(31, 33, 45)
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(30, 39, 64)
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.grid.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.grid.ColumnHeadersHeight = 40
         Me.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(51, 55, 72)
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(46, 58, 90)
         DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         DataGridViewCellStyle3.Padding = New System.Windows.Forms.Padding(6, 0, 4, 0)
-        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(74, 125, 255)
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(62, 104, 186)
         DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White
         DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
         Me.grid.DefaultCellStyle = DataGridViewCellStyle3
         Me.grid.EnableHeadersVisualStyles = False
-        Me.grid.GridColor = System.Drawing.Color.FromArgb(76, 81, 104)
+        Me.grid.GridColor = System.Drawing.Color.FromArgb(68, 82, 118)
         Me.grid.Location = New System.Drawing.Point(28, 186)
         Me.grid.MultiSelect = False
         Me.grid.ReadOnly = True
@@ -230,7 +230,7 @@ Partial Class RequestListForm
         Me.lblSummary.AutoSize = True
         Me.lblSummary.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lblSummary.Font = New System.Drawing.Font("Segoe UI", 9.5!)
-        Me.lblSummary.ForeColor = System.Drawing.Color.FromArgb(158, 164, 184)
+        Me.lblSummary.ForeColor = System.Drawing.Color.FromArgb(156, 168, 196)
         Me.lblSummary.Location = New System.Drawing.Point(26, 610)
         Me.lblSummary.Size = New System.Drawing.Size(40, 19)
         Me.lblSummary.Name = "lblSummary"
@@ -239,7 +239,7 @@ Partial Class RequestListForm
         Me.searchTimer.Interval = 350
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.BackColor = System.Drawing.Color.FromArgb(41, 44, 58)
+        Me.BackColor = System.Drawing.Color.FromArgb(37, 47, 75)
         Me.ClientSize = New System.Drawing.Size(1040, 640)
         Me.Controls.Add(Me.lblIcon)
         Me.Controls.Add(Me.lblTitle)
@@ -258,7 +258,7 @@ Partial Class RequestListForm
         Me.Controls.Add(Me.grid)
         Me.Controls.Add(Me.lblSummary)
         Me.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.ForeColor = System.Drawing.Color.FromArgb(236, 238, 244)
+        Me.ForeColor = System.Drawing.Color.FromArgb(220, 225, 236)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "RequestListForm"
         Me.Text = "Document Requests"
